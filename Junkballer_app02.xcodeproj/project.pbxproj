@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		227F61A219422F8C00FBA9EA /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 227F61A119422F8C00FBA9EA /* Parse.framework */; };
+		22B6403D19422689001E0BA3 /* photo (15).JPG in Resources */ = {isa = PBXBuildFile; fileRef = 22B6403C19422689001E0BA3 /* photo (15).JPG */; };
 		22C948D51940162D0026F3B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C948D41940162D0026F3B1 /* Foundation.framework */; };
 		22C948D71940162D0026F3B1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C948D61940162D0026F3B1 /* CoreGraphics.framework */; };
 		22C948D91940162D0026F3B1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C948D81940162D0026F3B1 /* UIKit.framework */; };
@@ -19,6 +21,27 @@
 		22C948F01940162E0026F3B1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C948D81940162D0026F3B1 /* UIKit.framework */; };
 		22C948F81940162E0026F3B1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 22C948F61940162E0026F3B1 /* InfoPlist.strings */; };
 		22C948FA1940162E0026F3B1 /* Junkballer_app02Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C948F91940162E0026F3B1 /* Junkballer_app02Tests.m */; };
+		22C94904194016810026F3B1 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22C94903194016810026F3B1 /* MainStoryboard.storyboard */; };
+		22C9490D194017BB0026F3B1 /* 1401472303_69.png in Resources */ = {isa = PBXBuildFile; fileRef = 22C94906194017BB0026F3B1 /* 1401472303_69.png */; };
+		22C9490E194017BB0026F3B1 /* camera.png in Resources */ = {isa = PBXBuildFile; fileRef = 22C94907194017BB0026F3B1 /* camera.png */; };
+		22C9490F194017BB0026F3B1 /* camera@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 22C94908194017BB0026F3B1 /* camera@2x.png */; };
+		22C94910194017BB0026F3B1 /* friends.png in Resources */ = {isa = PBXBuildFile; fileRef = 22C94909194017BB0026F3B1 /* friends.png */; };
+		22C94911194017BB0026F3B1 /* friends@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 22C9490A194017BB0026F3B1 /* friends@2x.png */; };
+		22C94912194017BB0026F3B1 /* inbox.png in Resources */ = {isa = PBXBuildFile; fileRef = 22C9490B194017BB0026F3B1 /* inbox.png */; };
+		22C94913194017BB0026F3B1 /* inbox@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 22C9490C194017BB0026F3B1 /* inbox@2x.png */; };
+		22C9491919401DD60026F3B1 /* PlayerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C9491819401DD60026F3B1 /* PlayerTableViewController.m */; };
+		22C94925194022E80026F3B1 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C9491C194022E80026F3B1 /* AudioToolbox.framework */; };
+		22C94926194022E80026F3B1 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C9491D194022E80026F3B1 /* CFNetwork.framework */; };
+		22C94927194022E80026F3B1 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C9491E194022E80026F3B1 /* CoreLocation.framework */; };
+		22C94928194022E80026F3B1 /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C9491F194022E80026F3B1 /* libz.1.1.3.dylib */; };
+		22C94929194022E80026F3B1 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C94920194022E80026F3B1 /* MobileCoreServices.framework */; };
+		22C9492A194022E80026F3B1 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C94921194022E80026F3B1 /* QuartzCore.framework */; };
+		22C9492B194022E80026F3B1 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C94922194022E80026F3B1 /* Security.framework */; };
+		22C9492C194022E80026F3B1 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C94923194022E80026F3B1 /* StoreKit.framework */; };
+		22C9492D194022E80026F3B1 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C94924194022E80026F3B1 /* SystemConfiguration.framework */; };
+		22C94932194026350026F3B1 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C94931194026350026F3B1 /* LoginViewController.m */; };
+		22C949351940264C0026F3B1 /* SignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C949341940264C0026F3B1 /* SignupViewController.m */; };
+		22F389791940F7C0003594EE /* AddPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F389781940F7C0003594EE /* AddPlayerViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +55,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		227F61A119422F8C00FBA9EA /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		22B6403C19422689001E0BA3 /* photo (15).JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "photo (15).JPG"; sourceTree = "<group>"; };
 		22C948D11940162D0026F3B1 /* Junkballer_app02.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Junkballer_app02.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22C948D41940162D0026F3B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		22C948D61940162D0026F3B1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -48,6 +73,31 @@
 		22C948F51940162E0026F3B1 /* Junkballer_app02Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Junkballer_app02Tests-Info.plist"; sourceTree = "<group>"; };
 		22C948F71940162E0026F3B1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		22C948F91940162E0026F3B1 /* Junkballer_app02Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Junkballer_app02Tests.m; sourceTree = "<group>"; };
+		22C94903194016810026F3B1 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		22C94906194017BB0026F3B1 /* 1401472303_69.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1401472303_69.png; sourceTree = "<group>"; };
+		22C94907194017BB0026F3B1 /* camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera.png; sourceTree = "<group>"; };
+		22C94908194017BB0026F3B1 /* camera@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camera@2x.png"; sourceTree = "<group>"; };
+		22C94909194017BB0026F3B1 /* friends.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = friends.png; sourceTree = "<group>"; };
+		22C9490A194017BB0026F3B1 /* friends@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "friends@2x.png"; sourceTree = "<group>"; };
+		22C9490B194017BB0026F3B1 /* inbox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = inbox.png; sourceTree = "<group>"; };
+		22C9490C194017BB0026F3B1 /* inbox@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "inbox@2x.png"; sourceTree = "<group>"; };
+		22C9491719401DD60026F3B1 /* PlayerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlayerTableViewController.h; path = ../PlayerTableViewController.h; sourceTree = "<group>"; };
+		22C9491819401DD60026F3B1 /* PlayerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlayerTableViewController.m; path = ../PlayerTableViewController.m; sourceTree = "<group>"; };
+		22C9491C194022E80026F3B1 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		22C9491D194022E80026F3B1 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		22C9491E194022E80026F3B1 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		22C9491F194022E80026F3B1 /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
+		22C94920194022E80026F3B1 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		22C94921194022E80026F3B1 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		22C94922194022E80026F3B1 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		22C94923194022E80026F3B1 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		22C94924194022E80026F3B1 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		22C94930194026350026F3B1 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginViewController.h; path = ../LoginViewController.h; sourceTree = "<group>"; };
+		22C94931194026350026F3B1 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginViewController.m; path = ../LoginViewController.m; sourceTree = "<group>"; };
+		22C949331940264C0026F3B1 /* SignupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SignupViewController.h; path = ../SignupViewController.h; sourceTree = "<group>"; };
+		22C949341940264C0026F3B1 /* SignupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SignupViewController.m; path = ../SignupViewController.m; sourceTree = "<group>"; };
+		22F389771940F7C0003594EE /* AddPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddPlayerViewController.h; path = ../AddPlayerViewController.h; sourceTree = "<group>"; };
+		22F389781940F7C0003594EE /* AddPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddPlayerViewController.m; path = ../AddPlayerViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +105,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22C94925194022E80026F3B1 /* AudioToolbox.framework in Frameworks */,
+				22C94926194022E80026F3B1 /* CFNetwork.framework in Frameworks */,
+				22C94927194022E80026F3B1 /* CoreLocation.framework in Frameworks */,
+				22C94928194022E80026F3B1 /* libz.1.1.3.dylib in Frameworks */,
+				22C94929194022E80026F3B1 /* MobileCoreServices.framework in Frameworks */,
+				22C9492A194022E80026F3B1 /* QuartzCore.framework in Frameworks */,
+				227F61A219422F8C00FBA9EA /* Parse.framework in Frameworks */,
+				22C9492B194022E80026F3B1 /* Security.framework in Frameworks */,
+				22C9492C194022E80026F3B1 /* StoreKit.framework in Frameworks */,
+				22C9492D194022E80026F3B1 /* SystemConfiguration.framework in Frameworks */,
 				22C948D71940162D0026F3B1 /* CoreGraphics.framework in Frameworks */,
 				22C948D91940162D0026F3B1 /* UIKit.framework in Frameworks */,
 				22C948D51940162D0026F3B1 /* Foundation.framework in Frameworks */,
@@ -77,6 +137,8 @@
 		22C948C81940162D0026F3B1 = {
 			isa = PBXGroup;
 			children = (
+				22C94905194017BB0026F3B1 /* images */,
+				22C94903194016810026F3B1 /* MainStoryboard.storyboard */,
 				22C948DA1940162D0026F3B1 /* Junkballer_app02 */,
 				22C948F31940162E0026F3B1 /* Junkballer_app02Tests */,
 				22C948D31940162D0026F3B1 /* Frameworks */,
@@ -96,6 +158,16 @@
 		22C948D31940162D0026F3B1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				227F61A119422F8C00FBA9EA /* Parse.framework */,
+				22C9491C194022E80026F3B1 /* AudioToolbox.framework */,
+				22C9491D194022E80026F3B1 /* CFNetwork.framework */,
+				22C9491E194022E80026F3B1 /* CoreLocation.framework */,
+				22C9491F194022E80026F3B1 /* libz.1.1.3.dylib */,
+				22C94920194022E80026F3B1 /* MobileCoreServices.framework */,
+				22C94921194022E80026F3B1 /* QuartzCore.framework */,
+				22C94922194022E80026F3B1 /* Security.framework */,
+				22C94923194022E80026F3B1 /* StoreKit.framework */,
+				22C94924194022E80026F3B1 /* SystemConfiguration.framework */,
 				22C948D41940162D0026F3B1 /* Foundation.framework */,
 				22C948D61940162D0026F3B1 /* CoreGraphics.framework */,
 				22C948D81940162D0026F3B1 /* UIKit.framework */,
@@ -107,6 +179,14 @@
 		22C948DA1940162D0026F3B1 /* Junkballer_app02 */ = {
 			isa = PBXGroup;
 			children = (
+				22F389771940F7C0003594EE /* AddPlayerViewController.h */,
+				22F389781940F7C0003594EE /* AddPlayerViewController.m */,
+				22C949331940264C0026F3B1 /* SignupViewController.h */,
+				22C949341940264C0026F3B1 /* SignupViewController.m */,
+				22C94930194026350026F3B1 /* LoginViewController.h */,
+				22C94931194026350026F3B1 /* LoginViewController.m */,
+				22C9491719401DD60026F3B1 /* PlayerTableViewController.h */,
+				22C9491819401DD60026F3B1 /* PlayerTableViewController.m */,
 				22C948E31940162D0026F3B1 /* JunkballerAppDelegate.h */,
 				22C948E41940162D0026F3B1 /* JunkballerAppDelegate.m */,
 				22C948E61940162D0026F3B1 /* Images.xcassets */,
@@ -142,6 +222,21 @@
 				22C948F61940162E0026F3B1 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		22C94905194017BB0026F3B1 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				22B6403C19422689001E0BA3 /* photo (15).JPG */,
+				22C94906194017BB0026F3B1 /* 1401472303_69.png */,
+				22C94907194017BB0026F3B1 /* camera.png */,
+				22C94908194017BB0026F3B1 /* camera@2x.png */,
+				22C94909194017BB0026F3B1 /* friends.png */,
+				22C9490A194017BB0026F3B1 /* friends@2x.png */,
+				22C9490B194017BB0026F3B1 /* inbox.png */,
+				22C9490C194017BB0026F3B1 /* inbox@2x.png */,
+			);
+			path = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,8 +315,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22C94910194017BB0026F3B1 /* friends.png in Resources */,
+				22C94904194016810026F3B1 /* MainStoryboard.storyboard in Resources */,
 				22C948DF1940162D0026F3B1 /* InfoPlist.strings in Resources */,
 				22C948E71940162D0026F3B1 /* Images.xcassets in Resources */,
+				22C9490D194017BB0026F3B1 /* 1401472303_69.png in Resources */,
+				22C94913194017BB0026F3B1 /* inbox@2x.png in Resources */,
+				22C9490E194017BB0026F3B1 /* camera.png in Resources */,
+				22C94911194017BB0026F3B1 /* friends@2x.png in Resources */,
+				22C9490F194017BB0026F3B1 /* camera@2x.png in Resources */,
+				22B6403D19422689001E0BA3 /* photo (15).JPG in Resources */,
+				22C94912194017BB0026F3B1 /* inbox.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,8 +344,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22C94932194026350026F3B1 /* LoginViewController.m in Sources */,
 				22C948E51940162D0026F3B1 /* JunkballerAppDelegate.m in Sources */,
+				22C9491919401DD60026F3B1 /* PlayerTableViewController.m in Sources */,
 				22C948E11940162D0026F3B1 /* main.m in Sources */,
+				22C949351940264C0026F3B1 /* SignupViewController.m in Sources */,
+				22F389791940F7C0003594EE /* AddPlayerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +466,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Junkballer_app02/Junkballer_app02-Prefix.pch";
 				INFOPLIST_FILE = "Junkballer_app02/Junkballer_app02-Info.plist";
@@ -371,6 +483,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Junkballer_app02/Junkballer_app02-Prefix.pch";
 				INFOPLIST_FILE = "Junkballer_app02/Junkballer_app02-Info.plist";
@@ -438,6 +554,7 @@
 				22C948FF1940162E0026F3B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		22C949001940162E0026F3B1 /* Build configuration list for PBXNativeTarget "Junkballer_app02Tests" */ = {
 			isa = XCConfigurationList;
@@ -446,6 +563,7 @@
 				22C949021940162E0026F3B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

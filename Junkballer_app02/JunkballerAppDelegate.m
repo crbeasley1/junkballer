@@ -7,15 +7,16 @@
 //
 
 #import "JunkballerAppDelegate.h"
+#import <Parse/Parse.h>
 
 @implementation JunkballerAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyAndVisible];
+    
+    [Parse setApplicationId:@"NwBp45qxdk5yx8oK7gVm75JKtmFfg5LPbJcqphuQ"
+                  clientKey:@"8KBcYvUjtOxXcaa3RHJuE0GsOKcsZSklpe3zj2Mx"];
+    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
     return YES;
 }
 
