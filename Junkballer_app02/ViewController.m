@@ -9,12 +9,15 @@
 #import "ViewController.h"
 #import "JunkballerModel.h"
 #import <Parse/Parse.h>
+#import "AddPlayerViewController.h"
 
 @interface ViewController ()
 @property (nonatomic, strong) AVCaptureSession *captureSession;
 @property (nonatomic, strong) AVCaptureVideoPreviewLayer *videoPreviewLayer;
 @property (nonatomic, strong) AVAudioPlayer *audioPlayer;
 @property (nonatomic) BOOL isReading;
+@property (nonatomic) BOOL isAddingPlayer;
+
 @property (strong, nonatomic)JunkballerModel *model;
 
 -(BOOL)startReading;
@@ -34,6 +37,8 @@
     
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    self.isAddingPlayer = [self.readerDelegate isKindOfClass:[AddPlayerViewController class]];
     
     // Initially make the captureSession object nil.
     _captureSession = nil;
@@ -174,24 +179,22 @@
 
             _isReading = NO;
             
-            for(PFObject *playerObject in self.model.allPlayers){
-                //search for player's code here
+            if(self.isAddingPlayer){
+                for(PFObject *playerObject in self.model.allPlayers){
+                    //search for player's code here
                 
-                if(playerObject[@"QRCode"] == [metadataObj stringValue])   {
+                    if(playerObject[@"QRCode"] == [metadataObj stringValue])   {
                     
-                    //Adds points
+                        //Adds points
                    
-                    int currentPoints = [playerObject[@"points"] intValue];
-                    playerObject[@"points"] = [NSNumber numberWithInt:currentPoints + 5];
+                        int currentPoints = [playerObject[@"points"] intValue];
+                        playerObject[@"points"] = [NSNumber numberWithInt:currentPoints + 5];
                    
-                    /* else {
+                        [playerObject saveInBackground];
                     
-                     // Go to AddplayerViewController
-                    
-                    
-                     } */
+                    }
+                
                 }
-                
             }
             
             if(self.readerDelegate){

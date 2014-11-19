@@ -60,7 +60,8 @@
     NSString *playerEmail = [self.playeremailField.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
     
     
-    if ([playerName length] == 0 || [playerEmail length] == 0) {
+    if ([playerName length] == 0 || [playerEmail length] == 0 || self.junkballers[@"QRCode"] != nil) {
+        //Change to include QR code warning.
         UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Oops!" message:@"Jeesh, make sure you enter a name and an email!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
         [alertView show];
         
