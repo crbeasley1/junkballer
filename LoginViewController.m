@@ -20,6 +20,7 @@
 {
     [super viewDidLoad];
     self.navigationItem.hidesBackButton = YES;
+    [self.view endEditing:YES];
     
 }
 
@@ -42,7 +43,7 @@
     
     
     if ([username length] == 0 || [password length] == 0) {
-        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Oops!" message:@"Make sure you enter a username and password!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Oops!" message:@"Make sure you enter the correct username and password!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
         [alertView show];
         
     }
@@ -50,7 +51,7 @@
         [PFUser logInWithUsernameInBackground:username password:password
                                         block:^(PFUser *user, NSError *error) {
                                             if (error) {
-                                                UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Oops!" message:@"Make sure you enter a username and password!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+                                                UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Oops!" message:@"Make sure you enter a correct username and password!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
                                                 [alertView show];
                                                 
                                             }

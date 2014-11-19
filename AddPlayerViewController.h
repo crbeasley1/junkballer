@@ -10,9 +10,11 @@
 
 @interface AddPlayerViewController : UIViewController
 
+
 @property (weak, nonatomic) IBOutlet UITextField *playernameField;
 
-@property (weak, nonatomic) IBOutlet UITextField *phoneField;
+
+@property (weak, nonatomic) IBOutlet UITextField *playeremailField;
 
 
 - (IBAction)backButton:(id)sender;

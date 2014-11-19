@@ -8,18 +8,25 @@
 
 #import "AddPlayerViewController.h"
 #import <Parse/Parse.h>
+#import "ViewController.h"
 
-@interface AddPlayerViewController ()
-
+@interface AddPlayerViewController () <QRReaderDelegate>
+@property(strong, nonatomic)PFObject *junkballers;
 @end
 
 @implementation AddPlayerViewController
+@synthesize junkballers = _junkballers;
 
+-(void)QRReaderReturnedString:(NSString *)QRResult{
+    //handle QR result
+    self.junkballers[@"QRCode"] = QRResult;
+}
 
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
+    self.Junkballers = [PFObject objectWithClassName:@"Junkballers"];
     
+    [super viewDidLoad];
     
 }
 
@@ -40,6 +47,9 @@
 */
 
 
+- (IBAction)playeremailField:(id)sender {
+}
+
 - (IBAction)backButton:(id)sender {
     [self performSegueWithIdentifier:@"backButton" sender:self];
     
@@ -47,31 +57,47 @@
 
 - (IBAction)addPlayer:(id)sender {
     NSString *playerName = [self.playernameField.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
-    NSString *phone = [self.phoneField.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+    NSString *playerEmail = [self.playeremailField.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
     
     
-    if ([playerName length] == 0 || [phone length] == 0) {
-        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Oops!" message:@"Make sure you enter a name and phone number!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    if ([playerName length] == 0 || [playerEmail length] == 0) {
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Oops!" message:@"Jeesh, make sure you enter a name and an email!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
         [alertView show];
         
         
     }
     else {
         
-        PFObject *newPlayer = [PFObject objectWithClassName:@"newPlayer"];
-        newPlayer[@"Name"] = playerName;
-        newPlayer[@"Phone"] = phone;
-        newPlayer[@"points"]= [[NSNumber alloc] initWithInt:5];
-        [newPlayer setObject:[PFUser currentUser] forKey:@"author"];
-        [newPlayer saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+        self.junkballers[@"name"] = playerName;
+        self.junkballers[@"email"] = playerEmail;
+        self.junkballers[@"points"]= [[NSNumber alloc] initWithInt:5];
+        [self.junkballers setObject:[PFUser currentUser] forKey:@"createdBy"];
+        [self.junkballers saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
             if (!error) {
                 // Dismiss the NewPostViewController and show the BlogTableViewController
+                UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Player Added!" message: [error.userInfo objectForKey:@"error"] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+                [alertView show];
                 }
+            else {
+                
+            }
             
         }];
+        [self.view endEditing:YES];
+        [self.navigationController popToRootViewControllerAnimated:YES];
+        
+        
+        
         
     }
     
     
 }
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if([segue.identifier isEqualToString:@"ScanNewPlayer"]){
+        ViewController *qRReader = segue.destinationViewController;
+        qRReader.readerDelegate = self;
+    }
+}
+
 @end
