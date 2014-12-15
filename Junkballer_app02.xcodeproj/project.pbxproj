@@ -7,19 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		221B9D391A19287000C74731 /* tower.png in Resources */ = {isa = PBXBuildFile; fileRef = 221B9D381A19287000C74731 /* tower.png */; };
-		2262807C1962D16400DAE7A2 /* rewards copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 2262807B1962D16400DAE7A2 /* rewards copy.png */; };
-		227207ED195A3C640014969A /* 15.png in Resources */ = {isa = PBXBuildFile; fileRef = 227207E9195A3C640014969A /* 15.png */; };
-		227207EE195A3C640014969A /* 05.png in Resources */ = {isa = PBXBuildFile; fileRef = 227207EA195A3C640014969A /* 05.png */; };
-		227207EF195A3C640014969A /* 10.png in Resources */ = {isa = PBXBuildFile; fileRef = 227207EB195A3C640014969A /* 10.png */; };
-		227207F0195A3C640014969A /* 20.png in Resources */ = {isa = PBXBuildFile; fileRef = 227207EC195A3C640014969A /* 20.png */; };
-		227F61A219422F8C00FBA9EA /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 227F61A119422F8C00FBA9EA /* Parse.framework */; };
-		229373AF1A0E9F96004D7E0B /* JunkballerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 229373AE1A0E9F96004D7E0B /* JunkballerModel.m */; };
 		229373B51A0EA616004D7E0B /* JunkballerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 229373B31A0EA616004D7E0B /* JunkballerTableViewController.m */; };
 		22A5F3561953D7F000F04984 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A5F3551953D7F000F04984 /* ViewController.m */; };
-		22A8A0EB1985E10F00C53316 /* addplayer.png in Resources */ = {isa = PBXBuildFile; fileRef = 22A8A0EA1985E10F00C53316 /* addplayer.png */; };
-		22B6403D19422689001E0BA3 /* photo (15).JPG in Resources */ = {isa = PBXBuildFile; fileRef = 22B6403C19422689001E0BA3 /* photo (15).JPG */; };
-		22C18E6619631E66002C6B8D /* 041.png in Resources */ = {isa = PBXBuildFile; fileRef = 22C18E6519631E66002C6B8D /* 041.png */; };
 		22C948D51940162D0026F3B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C948D41940162D0026F3B1 /* Foundation.framework */; };
 		22C948D71940162D0026F3B1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C948D61940162D0026F3B1 /* CoreGraphics.framework */; };
 		22C948D91940162D0026F3B1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C948D81940162D0026F3B1 /* UIKit.framework */; };
@@ -33,13 +22,6 @@
 		22C948F81940162E0026F3B1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 22C948F61940162E0026F3B1 /* InfoPlist.strings */; };
 		22C948FA1940162E0026F3B1 /* Junkballer_app02Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C948F91940162E0026F3B1 /* Junkballer_app02Tests.m */; };
 		22C94904194016810026F3B1 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22C94903194016810026F3B1 /* MainStoryboard.storyboard */; };
-		22C9490D194017BB0026F3B1 /* 1401472303_69.png in Resources */ = {isa = PBXBuildFile; fileRef = 22C94906194017BB0026F3B1 /* 1401472303_69.png */; };
-		22C9490E194017BB0026F3B1 /* camera.png in Resources */ = {isa = PBXBuildFile; fileRef = 22C94907194017BB0026F3B1 /* camera.png */; };
-		22C9490F194017BB0026F3B1 /* camera@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 22C94908194017BB0026F3B1 /* camera@2x.png */; };
-		22C94910194017BB0026F3B1 /* friends.png in Resources */ = {isa = PBXBuildFile; fileRef = 22C94909194017BB0026F3B1 /* friends.png */; };
-		22C94911194017BB0026F3B1 /* friends@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 22C9490A194017BB0026F3B1 /* friends@2x.png */; };
-		22C94912194017BB0026F3B1 /* inbox.png in Resources */ = {isa = PBXBuildFile; fileRef = 22C9490B194017BB0026F3B1 /* inbox.png */; };
-		22C94913194017BB0026F3B1 /* inbox@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 22C9490C194017BB0026F3B1 /* inbox@2x.png */; };
 		22C94925194022E80026F3B1 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C9491C194022E80026F3B1 /* AudioToolbox.framework */; };
 		22C94926194022E80026F3B1 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C9491D194022E80026F3B1 /* CFNetwork.framework */; };
 		22C94927194022E80026F3B1 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C9491E194022E80026F3B1 /* CoreLocation.framework */; };
@@ -49,16 +31,20 @@
 		22C9492B194022E80026F3B1 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C94922194022E80026F3B1 /* Security.framework */; };
 		22C9492C194022E80026F3B1 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C94923194022E80026F3B1 /* StoreKit.framework */; };
 		22C9492D194022E80026F3B1 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C94924194022E80026F3B1 /* SystemConfiguration.framework */; };
-		22C94932194026350026F3B1 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C94931194026350026F3B1 /* LoginViewController.m */; };
-		22C949351940264C0026F3B1 /* SignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C949341940264C0026F3B1 /* SignupViewController.m */; };
 		22CF402B1A0EF68D004A1EEC /* BonusPointsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22CF402A1A0EF68D004A1EEC /* BonusPointsViewController.m */; };
-		22DD1A0A1963AA950000D0F7 /* 030.png in Resources */ = {isa = PBXBuildFile; fileRef = 22DD1A091963AA950000D0F7 /* 030.png */; };
-		22EB518E19552110009DA08D /* junkballer_dimmed.png in Resources */ = {isa = PBXBuildFile; fileRef = 22EB518D19552110009DA08D /* junkballer_dimmed.png */; };
-		22F389791940F7C0003594EE /* AddPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F389781940F7C0003594EE /* AddPlayerViewController.m */; };
-		22F4DB64195D16D8003F1AFE /* app_home.png in Resources */ = {isa = PBXBuildFile; fileRef = 22F4DB63195D16D8003F1AFE /* app_home.png */; };
-		22F4DB66195D1A69003F1AFE /* app_launchimg.png in Resources */ = {isa = PBXBuildFile; fileRef = 22F4DB65195D1A68003F1AFE /* app_launchimg.png */; };
-		22F4DB68195D1B3E003F1AFE /* app_launchR4.png in Resources */ = {isa = PBXBuildFile; fileRef = 22F4DB67195D1B3E003F1AFE /* app_launchR4.png */; };
-		22FDA39B195C839200A08A4A /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 22FDA39A195C839200A08A4A /* arrow.png */; };
+		F16630B01A1D6147000BD1CE /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F16630AC1A1D6147000BD1CE /* LoginViewController.m */; };
+		F16630B11A1D6147000BD1CE /* rewards copy.png in Resources */ = {isa = PBXBuildFile; fileRef = F16630AD1A1D6147000BD1CE /* rewards copy.png */; };
+		F16630B21A1D6147000BD1CE /* SignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F16630AF1A1D6147000BD1CE /* SignupViewController.m */; };
+		F16630CD1A1D618E000BD1CE /* 030.png in Resources */ = {isa = PBXBuildFile; fileRef = F16630C41A1D618E000BD1CE /* 030.png */; };
+		F16630CE1A1D618E000BD1CE /* 041.png in Resources */ = {isa = PBXBuildFile; fileRef = F16630C51A1D618E000BD1CE /* 041.png */; };
+		F16630CF1A1D618E000BD1CE /* addplayer.png in Resources */ = {isa = PBXBuildFile; fileRef = F16630C61A1D618E000BD1CE /* addplayer.png */; };
+		F16630D01A1D618E000BD1CE /* AddPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F16630C81A1D618E000BD1CE /* AddPlayerViewController.m */; };
+		F16630D11A1D618E000BD1CE /* app_home.png in Resources */ = {isa = PBXBuildFile; fileRef = F16630C91A1D618E000BD1CE /* app_home.png */; };
+		F16630D21A1D618E000BD1CE /* app_launchimg.png in Resources */ = {isa = PBXBuildFile; fileRef = F16630CA1A1D618E000BD1CE /* app_launchimg.png */; };
+		F16630D31A1D618E000BD1CE /* app_launchR4.png in Resources */ = {isa = PBXBuildFile; fileRef = F16630CB1A1D618E000BD1CE /* app_launchR4.png */; };
+		F16630D41A1D618E000BD1CE /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = F16630CC1A1D618E000BD1CE /* arrow.png */; };
+		F16630D71A1D6223000BD1CE /* JunkballerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F16630D61A1D6223000BD1CE /* JunkballerModel.m */; };
+		F16630D91A1D6369000BD1CE /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 227F61A119422F8C00FBA9EA /* Parse.framework */; };
 		F1AA273C196211FD00208E6C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1AA273B196211FD00208E6C /* AVFoundation.framework */; };
 		F1AA274219621EA700208E6C /* JunkballerProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1AA274119621EA700208E6C /* JunkballerProfileViewController.m */; };
 		F1AA27481962232300208E6C /* JunkballerRedeemPointsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1AA27471962232300208E6C /* JunkballerRedeemPointsTableViewController.m */; };
@@ -75,21 +61,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		221B9D381A19287000C74731 /* tower.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tower.png; sourceTree = "<group>"; };
-		2262807B1962D16400DAE7A2 /* rewards copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "rewards copy.png"; path = "../rewards copy.png"; sourceTree = "<group>"; };
-		227207E9195A3C640014969A /* 15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 15.png; sourceTree = "<group>"; };
-		227207EA195A3C640014969A /* 05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 05.png; sourceTree = "<group>"; };
-		227207EB195A3C640014969A /* 10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 10.png; sourceTree = "<group>"; };
-		227207EC195A3C640014969A /* 20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 20.png; sourceTree = "<group>"; };
 		227F61A119422F8C00FBA9EA /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
-		229373AD1A0E9F87004D7E0B /* JunkballerModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JunkballerModel.h; sourceTree = "<group>"; };
-		229373AE1A0E9F96004D7E0B /* JunkballerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JunkballerModel.m; sourceTree = "<group>"; };
 		229373B31A0EA616004D7E0B /* JunkballerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = JunkballerTableViewController.m; sourceTree = "<group>"; };
 		22A5F3541953D7E600F04984 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		22A5F3551953D7F000F04984 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		22A8A0EA1985E10F00C53316 /* addplayer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = addplayer.png; path = ../addplayer.png; sourceTree = "<group>"; };
-		22B6403C19422689001E0BA3 /* photo (15).JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "photo (15).JPG"; sourceTree = "<group>"; };
-		22C18E6519631E66002C6B8D /* 041.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 041.png; path = ../041.png; sourceTree = "<group>"; };
 		22C948D11940162D0026F3B1 /* Junkballer_app02.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Junkballer_app02.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22C948D41940162D0026F3B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		22C948D61940162D0026F3B1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -107,13 +82,6 @@
 		22C948F71940162E0026F3B1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		22C948F91940162E0026F3B1 /* Junkballer_app02Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Junkballer_app02Tests.m; sourceTree = "<group>"; };
 		22C94903194016810026F3B1 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
-		22C94906194017BB0026F3B1 /* 1401472303_69.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1401472303_69.png; sourceTree = "<group>"; };
-		22C94907194017BB0026F3B1 /* camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera.png; sourceTree = "<group>"; };
-		22C94908194017BB0026F3B1 /* camera@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camera@2x.png"; sourceTree = "<group>"; };
-		22C94909194017BB0026F3B1 /* friends.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = friends.png; sourceTree = "<group>"; };
-		22C9490A194017BB0026F3B1 /* friends@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "friends@2x.png"; sourceTree = "<group>"; };
-		22C9490B194017BB0026F3B1 /* inbox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = inbox.png; sourceTree = "<group>"; };
-		22C9490C194017BB0026F3B1 /* inbox@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "inbox@2x.png"; sourceTree = "<group>"; };
 		22C9491C194022E80026F3B1 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		22C9491D194022E80026F3B1 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		22C9491E194022E80026F3B1 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -123,21 +91,25 @@
 		22C94922194022E80026F3B1 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		22C94923194022E80026F3B1 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		22C94924194022E80026F3B1 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		22C94930194026350026F3B1 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginViewController.h; path = ../LoginViewController.h; sourceTree = "<group>"; };
-		22C94931194026350026F3B1 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginViewController.m; path = ../LoginViewController.m; sourceTree = "<group>"; };
-		22C949331940264C0026F3B1 /* SignupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SignupViewController.h; path = ../SignupViewController.h; sourceTree = "<group>"; };
-		22C949341940264C0026F3B1 /* SignupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SignupViewController.m; path = ../SignupViewController.m; sourceTree = "<group>"; };
 		22CF402A1A0EF68D004A1EEC /* BonusPointsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BonusPointsViewController.m; sourceTree = "<group>"; };
 		22CF402C1A0EF6BD004A1EEC /* JunkballerTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JunkballerTableViewController.h; sourceTree = "<group>"; };
-		22DD1A091963AA950000D0F7 /* 030.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 030.png; path = ../030.png; sourceTree = "<group>"; };
-		22EB518A195516BB009DA08D /* BonusPointsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BonusPointsViewController.h; path = ../BonusPointsViewController.h; sourceTree = "<group>"; };
-		22EB518D19552110009DA08D /* junkballer_dimmed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = junkballer_dimmed.png; sourceTree = "<group>"; };
-		22F389771940F7C0003594EE /* AddPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddPlayerViewController.h; path = ../AddPlayerViewController.h; sourceTree = "<group>"; };
-		22F389781940F7C0003594EE /* AddPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddPlayerViewController.m; path = ../AddPlayerViewController.m; sourceTree = "<group>"; };
-		22F4DB63195D16D8003F1AFE /* app_home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = app_home.png; path = ../app_home.png; sourceTree = "<group>"; };
-		22F4DB65195D1A68003F1AFE /* app_launchimg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = app_launchimg.png; path = ../app_launchimg.png; sourceTree = "<group>"; };
-		22F4DB67195D1B3E003F1AFE /* app_launchR4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = app_launchR4.png; path = ../app_launchR4.png; sourceTree = "<group>"; };
-		22FDA39A195C839200A08A4A /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = arrow.png; path = ../arrow.png; sourceTree = "<group>"; };
+		F16630AB1A1D6147000BD1CE /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		F16630AC1A1D6147000BD1CE /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		F16630AD1A1D6147000BD1CE /* rewards copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "rewards copy.png"; path = "Junkballer_app02/rewards copy.png"; sourceTree = "<group>"; };
+		F16630AE1A1D6147000BD1CE /* SignupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignupViewController.h; sourceTree = "<group>"; };
+		F16630AF1A1D6147000BD1CE /* SignupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignupViewController.m; sourceTree = "<group>"; };
+		F16630C41A1D618E000BD1CE /* 030.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 030.png; path = Junkballer_app02/030.png; sourceTree = "<group>"; };
+		F16630C51A1D618E000BD1CE /* 041.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 041.png; path = Junkballer_app02/041.png; sourceTree = "<group>"; };
+		F16630C61A1D618E000BD1CE /* addplayer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = addplayer.png; path = Junkballer_app02/addplayer.png; sourceTree = "<group>"; };
+		F16630C71A1D618E000BD1CE /* AddPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddPlayerViewController.h; sourceTree = "<group>"; };
+		F16630C81A1D618E000BD1CE /* AddPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddPlayerViewController.m; sourceTree = "<group>"; };
+		F16630C91A1D618E000BD1CE /* app_home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = app_home.png; path = Junkballer_app02/app_home.png; sourceTree = "<group>"; };
+		F16630CA1A1D618E000BD1CE /* app_launchimg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = app_launchimg.png; path = Junkballer_app02/app_launchimg.png; sourceTree = "<group>"; };
+		F16630CB1A1D618E000BD1CE /* app_launchR4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = app_launchR4.png; path = Junkballer_app02/app_launchR4.png; sourceTree = "<group>"; };
+		F16630CC1A1D618E000BD1CE /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = arrow.png; path = Junkballer_app02/arrow.png; sourceTree = "<group>"; };
+		F16630D51A1D6223000BD1CE /* JunkballerModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JunkballerModel.h; sourceTree = "<group>"; };
+		F16630D61A1D6223000BD1CE /* JunkballerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JunkballerModel.m; sourceTree = "<group>"; };
+		F16630D81A1D6248000BD1CE /* BonusPointsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BonusPointsViewController.h; sourceTree = "<group>"; };
 		F1AA273B196211FD00208E6C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		F1AA274019621EA700208E6C /* JunkballerProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JunkballerProfileViewController.h; sourceTree = "<group>"; };
 		F1AA274119621EA700208E6C /* JunkballerProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JunkballerProfileViewController.m; sourceTree = "<group>"; };
@@ -150,6 +122,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F16630D91A1D6369000BD1CE /* Parse.framework in Frameworks */,
 				F1AA273C196211FD00208E6C /* AVFoundation.framework in Frameworks */,
 				22C94925194022E80026F3B1 /* AudioToolbox.framework in Frameworks */,
 				22C94926194022E80026F3B1 /* CFNetwork.framework in Frameworks */,
@@ -157,7 +130,6 @@
 				22C94928194022E80026F3B1 /* libz.1.1.3.dylib in Frameworks */,
 				22C94929194022E80026F3B1 /* MobileCoreServices.framework in Frameworks */,
 				22C9492A194022E80026F3B1 /* QuartzCore.framework in Frameworks */,
-				227F61A219422F8C00FBA9EA /* Parse.framework in Frameworks */,
 				22C9492B194022E80026F3B1 /* Security.framework in Frameworks */,
 				22C9492C194022E80026F3B1 /* StoreKit.framework in Frameworks */,
 				22C9492D194022E80026F3B1 /* SystemConfiguration.framework in Frameworks */,
@@ -183,7 +155,14 @@
 		22C948C81940162D0026F3B1 = {
 			isa = PBXGroup;
 			children = (
-				22C94905194017BB0026F3B1 /* images */,
+				F16630C41A1D618E000BD1CE /* 030.png */,
+				F16630C51A1D618E000BD1CE /* 041.png */,
+				F16630C61A1D618E000BD1CE /* addplayer.png */,
+				F16630C91A1D618E000BD1CE /* app_home.png */,
+				F16630CA1A1D618E000BD1CE /* app_launchimg.png */,
+				F16630CB1A1D618E000BD1CE /* app_launchR4.png */,
+				F16630CC1A1D618E000BD1CE /* arrow.png */,
+				F16630AD1A1D6147000BD1CE /* rewards copy.png */,
 				22C94903194016810026F3B1 /* MainStoryboard.storyboard */,
 				22C948DA1940162D0026F3B1 /* Junkballer_app02 */,
 				22C948F31940162E0026F3B1 /* Junkballer_app02Tests */,
@@ -226,24 +205,24 @@
 		22C948DA1940162D0026F3B1 /* Junkballer_app02 */ = {
 			isa = PBXGroup;
 			children = (
+				F16630D51A1D6223000BD1CE /* JunkballerModel.h */,
+				F16630D61A1D6223000BD1CE /* JunkballerModel.m */,
+				F16630C71A1D618E000BD1CE /* AddPlayerViewController.h */,
+				F16630C81A1D618E000BD1CE /* AddPlayerViewController.m */,
+				F16630AB1A1D6147000BD1CE /* LoginViewController.h */,
+				F16630AC1A1D6147000BD1CE /* LoginViewController.m */,
+				F16630AE1A1D6147000BD1CE /* SignupViewController.h */,
+				F16630AF1A1D6147000BD1CE /* SignupViewController.m */,
 				22CF402C1A0EF6BD004A1EEC /* JunkballerTableViewController.h */,
 				229373B31A0EA616004D7E0B /* JunkballerTableViewController.m */,
-				229373AD1A0E9F87004D7E0B /* JunkballerModel.h */,
-				229373AE1A0E9F96004D7E0B /* JunkballerModel.m */,
 				F1AA27461962232300208E6C /* JunkballerRedeemPointsTableViewController.h */,
 				F1AA27471962232300208E6C /* JunkballerRedeemPointsTableViewController.m */,
 				F1AA274019621EA700208E6C /* JunkballerProfileViewController.h */,
 				F1AA274119621EA700208E6C /* JunkballerProfileViewController.m */,
-				22EB518A195516BB009DA08D /* BonusPointsViewController.h */,
+				F16630D81A1D6248000BD1CE /* BonusPointsViewController.h */,
 				22CF402A1A0EF68D004A1EEC /* BonusPointsViewController.m */,
 				22A5F3541953D7E600F04984 /* ViewController.h */,
 				22A5F3551953D7F000F04984 /* ViewController.m */,
-				22F389771940F7C0003594EE /* AddPlayerViewController.h */,
-				22F389781940F7C0003594EE /* AddPlayerViewController.m */,
-				22C949331940264C0026F3B1 /* SignupViewController.h */,
-				22C949341940264C0026F3B1 /* SignupViewController.m */,
-				22C94930194026350026F3B1 /* LoginViewController.h */,
-				22C94931194026350026F3B1 /* LoginViewController.m */,
 				22C948E31940162D0026F3B1 /* JunkballerAppDelegate.h */,
 				22C948E41940162D0026F3B1 /* JunkballerAppDelegate.m */,
 				22C948E61940162D0026F3B1 /* Images.xcassets */,
@@ -279,35 +258,6 @@
 				22C948F61940162E0026F3B1 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		22C94905194017BB0026F3B1 /* images */ = {
-			isa = PBXGroup;
-			children = (
-				221B9D381A19287000C74731 /* tower.png */,
-				22A8A0EA1985E10F00C53316 /* addplayer.png */,
-				22DD1A091963AA950000D0F7 /* 030.png */,
-				22C18E6519631E66002C6B8D /* 041.png */,
-				2262807B1962D16400DAE7A2 /* rewards copy.png */,
-				22F4DB67195D1B3E003F1AFE /* app_launchR4.png */,
-				22F4DB65195D1A68003F1AFE /* app_launchimg.png */,
-				22F4DB63195D16D8003F1AFE /* app_home.png */,
-				22FDA39A195C839200A08A4A /* arrow.png */,
-				22EB518D19552110009DA08D /* junkballer_dimmed.png */,
-				227207E9195A3C640014969A /* 15.png */,
-				227207EA195A3C640014969A /* 05.png */,
-				227207EB195A3C640014969A /* 10.png */,
-				227207EC195A3C640014969A /* 20.png */,
-				22B6403C19422689001E0BA3 /* photo (15).JPG */,
-				22C94906194017BB0026F3B1 /* 1401472303_69.png */,
-				22C94907194017BB0026F3B1 /* camera.png */,
-				22C94908194017BB0026F3B1 /* camera@2x.png */,
-				22C94909194017BB0026F3B1 /* friends.png */,
-				22C9490A194017BB0026F3B1 /* friends@2x.png */,
-				22C9490B194017BB0026F3B1 /* inbox.png */,
-				22C9490C194017BB0026F3B1 /* inbox@2x.png */,
-			);
-			path = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -389,31 +339,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22A8A0EB1985E10F00C53316 /* addplayer.png in Resources */,
-				22F4DB68195D1B3E003F1AFE /* app_launchR4.png in Resources */,
-				227207ED195A3C640014969A /* 15.png in Resources */,
-				22C94910194017BB0026F3B1 /* friends.png in Resources */,
+				F16630D31A1D618E000BD1CE /* app_launchR4.png in Resources */,
+				F16630D11A1D618E000BD1CE /* app_home.png in Resources */,
+				F16630D41A1D618E000BD1CE /* arrow.png in Resources */,
 				22C94904194016810026F3B1 /* MainStoryboard.storyboard in Resources */,
 				22C948DF1940162D0026F3B1 /* InfoPlist.strings in Resources */,
 				22C948E71940162D0026F3B1 /* Images.xcassets in Resources */,
-				22F4DB66195D1A69003F1AFE /* app_launchimg.png in Resources */,
-				221B9D391A19287000C74731 /* tower.png in Resources */,
-				2262807C1962D16400DAE7A2 /* rewards copy.png in Resources */,
-				227207EF195A3C640014969A /* 10.png in Resources */,
-				22C18E6619631E66002C6B8D /* 041.png in Resources */,
-				22F4DB64195D16D8003F1AFE /* app_home.png in Resources */,
-				22C9490D194017BB0026F3B1 /* 1401472303_69.png in Resources */,
-				22EB518E19552110009DA08D /* junkballer_dimmed.png in Resources */,
-				22C94913194017BB0026F3B1 /* inbox@2x.png in Resources */,
-				227207EE195A3C640014969A /* 05.png in Resources */,
-				22DD1A0A1963AA950000D0F7 /* 030.png in Resources */,
-				22FDA39B195C839200A08A4A /* arrow.png in Resources */,
-				22C9490E194017BB0026F3B1 /* camera.png in Resources */,
-				227207F0195A3C640014969A /* 20.png in Resources */,
-				22C94911194017BB0026F3B1 /* friends@2x.png in Resources */,
-				22C9490F194017BB0026F3B1 /* camera@2x.png in Resources */,
-				22B6403D19422689001E0BA3 /* photo (15).JPG in Resources */,
-				22C94912194017BB0026F3B1 /* inbox.png in Resources */,
+				F16630CF1A1D618E000BD1CE /* addplayer.png in Resources */,
+				F16630CE1A1D618E000BD1CE /* 041.png in Resources */,
+				F16630B11A1D6147000BD1CE /* rewards copy.png in Resources */,
+				F16630CD1A1D618E000BD1CE /* 030.png in Resources */,
+				F16630D21A1D618E000BD1CE /* app_launchimg.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,14 +371,14 @@
 				22A5F3561953D7F000F04984 /* ViewController.m in Sources */,
 				F1AA274219621EA700208E6C /* JunkballerProfileViewController.m in Sources */,
 				F1AA27481962232300208E6C /* JunkballerRedeemPointsTableViewController.m in Sources */,
-				22C94932194026350026F3B1 /* LoginViewController.m in Sources */,
+				F16630D71A1D6223000BD1CE /* JunkballerModel.m in Sources */,
 				22CF402B1A0EF68D004A1EEC /* BonusPointsViewController.m in Sources */,
-				229373AF1A0E9F96004D7E0B /* JunkballerModel.m in Sources */,
+				F16630B21A1D6147000BD1CE /* SignupViewController.m in Sources */,
+				F16630D01A1D618E000BD1CE /* AddPlayerViewController.m in Sources */,
+				F16630B01A1D6147000BD1CE /* LoginViewController.m in Sources */,
 				229373B51A0EA616004D7E0B /* JunkballerTableViewController.m in Sources */,
 				22C948E51940162D0026F3B1 /* JunkballerAppDelegate.m in Sources */,
 				22C948E11940162D0026F3B1 /* main.m in Sources */,
-				22C949351940264C0026F3B1 /* SignupViewController.m in Sources */,
-				22F389791940F7C0003594EE /* AddPlayerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
