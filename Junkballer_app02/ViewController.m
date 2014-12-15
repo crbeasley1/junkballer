@@ -16,7 +16,6 @@
 @property (nonatomic, strong) AVCaptureVideoPreviewLayer *videoPreviewLayer;
 @property (nonatomic, strong) AVAudioPlayer *audioPlayer;
 @property (nonatomic) BOOL isReading;
-@property (nonatomic) BOOL isAddingPlayer;
 
 @property (strong, nonatomic)JunkballerModel *model;
 
@@ -38,7 +37,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
-    self.isAddingPlayer = [self.readerDelegate isKindOfClass:[AddPlayerViewController class]];
+    
     
     // Initially make the captureSession object nil.
     _captureSession = nil;
@@ -179,7 +178,8 @@
 
             _isReading = NO;
             
-            if(self.isAddingPlayer){
+            //Check if the delegate is AddPlayerViewController.
+            if(![self.readerDelegate isKindOfClass:[AddPlayerViewController class]]){
                 for(PFObject *playerObject in self.model.allPlayers){
                     //search for player's code here
                 
