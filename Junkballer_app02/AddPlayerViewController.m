@@ -9,6 +9,7 @@
 #import "AddPlayerViewController.h"
 #import <Parse/Parse.h>
 #import "ViewController.h"
+#import "JunkballerModel.h"
 
 @interface AddPlayerViewController () <QRReaderDelegate>
 @property(strong, nonatomic)PFObject *junkballers;
@@ -66,6 +67,13 @@
                 // Dismiss the NewPostViewController and show the BlogTableViewController
                 UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Player Added!" message: [error.userInfo objectForKey:@"error"] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
                 [alertView show];
+                
+                JunkballerModel *model = ((JunkballerModel*)[JunkballerModel sharedManager]);
+                NSMutableArray *allPlayers = [model.allPlayers mutableCopy];
+                [allPlayers addObject:self.junkballers];
+                model.allPlayers = allPlayers;
+                
+                
                 }
             else {
                 
