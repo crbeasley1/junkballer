@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		229373B51A0EA616004D7E0B /* JunkballerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 229373B31A0EA616004D7E0B /* JunkballerTableViewController.m */; };
 		22A5F3561953D7F000F04984 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A5F3551953D7F000F04984 /* ViewController.m */; };
+		22B983CC1A3E7E4000EFBC1D /* beep.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 22B983CB1A3E7E4000EFBC1D /* beep.mp3 */; };
 		22C948D51940162D0026F3B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C948D41940162D0026F3B1 /* Foundation.framework */; };
 		22C948D71940162D0026F3B1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C948D61940162D0026F3B1 /* CoreGraphics.framework */; };
 		22C948D91940162D0026F3B1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C948D81940162D0026F3B1 /* UIKit.framework */; };
@@ -65,6 +66,7 @@
 		229373B31A0EA616004D7E0B /* JunkballerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = JunkballerTableViewController.m; sourceTree = "<group>"; };
 		22A5F3541953D7E600F04984 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		22A5F3551953D7F000F04984 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		22B983CB1A3E7E4000EFBC1D /* beep.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = beep.mp3; sourceTree = "<group>"; };
 		22C948D11940162D0026F3B1 /* Junkballer_app02.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Junkballer_app02.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22C948D41940162D0026F3B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		22C948D61940162D0026F3B1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -155,6 +157,7 @@
 		22C948C81940162D0026F3B1 = {
 			isa = PBXGroup;
 			children = (
+				22B983CB1A3E7E4000EFBC1D /* beep.mp3 */,
 				F16630C41A1D618E000BD1CE /* 030.png */,
 				F16630C51A1D618E000BD1CE /* 041.png */,
 				F16630C61A1D618E000BD1CE /* addplayer.png */,
@@ -341,6 +344,7 @@
 			files = (
 				F16630D31A1D618E000BD1CE /* app_launchR4.png in Resources */,
 				F16630D11A1D618E000BD1CE /* app_home.png in Resources */,
+				22B983CC1A3E7E4000EFBC1D /* beep.mp3 in Resources */,
 				F16630D41A1D618E000BD1CE /* arrow.png in Resources */,
 				22C94904194016810026F3B1 /* MainStoryboard.storyboard in Resources */,
 				22C948DF1940162D0026F3B1 /* InfoPlist.strings in Resources */,

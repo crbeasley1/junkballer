@@ -178,19 +178,27 @@
 
             _isReading = NO;
             
+            NSDate *currentDate = [NSDate date];
             //Check if the delegate is AddPlayerViewController.
             if(![self.readerDelegate isKindOfClass:[AddPlayerViewController class]]){
                 for(PFObject *playerObject in self.model.allPlayers){
                     //search for player's code here
-                
-                    if(playerObject[@"QRCode"] == [metadataObj stringValue])   {
-                    
-                        //Adds points
                    
-                        int currentPoints = [playerObject[@"points"] intValue];
-                        playerObject[@"points"] = [NSNumber numberWithInt:currentPoints + 5];
-                   
-                        [playerObject saveInBackground];
+                    if([playerObject[@"QRCode"] isEqualToString:[metadataObj stringValue]]){
+                        if(playerObject[@"lastScanDate"] == nil || 86400 < [currentDate timeIntervalSinceDate:((NSDate*)playerObject[@"lastScanDate"])]){
+                            //Adds points
+                            
+                            int currentPoints = [playerObject[@"points"] intValue];
+                            playerObject[@"points"] = [NSNumber numberWithInt:currentPoints + 5];
+                            playerObject[@"lastScanDate"] = [NSDate date];
+                            [playerObject saveInBackground];
+                        }
+                        else{
+                            //show alert <24 hrs.
+                            UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Oops!" message:@"You can only check in once a day! Try getting some bonus points!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+                            [alertView show];
+
+                        }
                     
                     }
                 
