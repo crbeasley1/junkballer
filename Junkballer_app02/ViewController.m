@@ -196,6 +196,7 @@
                         else{
                             //show alert <24 hrs.
                             UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Oops!" message:@"You can only check in once a day! Try getting some bonus points!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+                            [alertView performSelectorOnMainThread:@selector(show) withObject:nil waitUntilDone:YES];
                             [alertView show];
 
                         }
