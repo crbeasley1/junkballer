@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="dhF-rB-A47">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="dhF-rB-A47">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
     <scenes>
         <!--Tab Bar Controller-->
@@ -20,6 +20,7 @@
                         <segue destination="LJL-fF-WnN" kind="relationship" relationship="viewControllers" id="HWF-bq-jht"/>
                         <segue destination="5Sl-BZ-5pQ" kind="relationship" relationship="viewControllers" id="xRn-Fa-6mV"/>
                         <segue destination="bHc-5h-kHu" kind="relationship" relationship="viewControllers" id="1hB-TF-WE5"/>
+                        <segue destination="m15-l7-hCB" kind="relationship" relationship="viewControllers" id="ANI-y4-gGI"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jiu-hi-LB6" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -568,6 +569,25 @@
             </objects>
             <point key="canvasLocation" x="214" y="338"/>
         </scene>
+        <!--Club Profile View Controller-->
+        <scene sceneID="k7h-eY-eLk">
+            <objects>
+                <viewController id="CaB-yZ-H6E" customClass="ClubProfileViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aAA-xd-PSr"/>
+                        <viewControllerLayoutGuide type="bottom" id="FYT-4u-iwH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="b3p-aZ-AZM">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="PoD-3H-25D"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rTs-aa-qqo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="746" y="1512"/>
+        </scene>
         <!--Scan Points-->
         <scene sceneID="Wzi-b2-L0R">
             <objects>
@@ -590,7 +610,7 @@
         <!--Junkballer-->
         <scene sceneID="cai-5o-Ew1">
             <objects>
-                <viewController id="xqy-ZE-1wA" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="xqy-ZE-1wA" customClass="ScannerViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="aIJ-hd-1BA"/>
                         <viewControllerLayoutGuide type="bottom" id="e5j-6H-XJt"/>
@@ -648,6 +668,25 @@
             </objects>
             <point key="canvasLocation" x="1208" y="971"/>
         </scene>
+        <!--Account-->
+        <scene sceneID="Kip-3f-AHu">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="m15-l7-hCB" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Account" image="paybill.png" id="Rv1-oX-oSg"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="YLs-f2-Wps">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="CaB-yZ-H6E" kind="relationship" relationship="rootViewController" id="Np3-gS-qSw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t9L-9k-79S" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="214" y="1512"/>
+        </scene>
     </scenes>
     <resources>
         <image name="05.png" width="1280" height="1280"/>
@@ -658,6 +697,7 @@
         <image name="camera.png" width="33" height="24"/>
         <image name="friends.png" width="40" height="24"/>
         <image name="junkballer_dimmed.png" width="1280" height="1280"/>
+        <image name="paybill.png" width="40" height="40"/>
         <image name="photo (15).JPG" width="1280" height="1280"/>
         <image name="tower.png" width="100" height="100"/>
     </resources>
@@ -667,6 +707,6 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="yTv-VD-DmV"/>
+        <segue reference="md4-AC-pJ3"/>
     </inferredMetricsTieBreakers>
 </document>
