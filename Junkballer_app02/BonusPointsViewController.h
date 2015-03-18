@@ -13,7 +13,13 @@
 
 -(IBAction)addPointsWithSender:(UIView*)sender;
 
+- (IBAction)buttonPressed:(id)sender;
+
 @property(strong, nonatomic)PFObject *junkerballer;
+@property(strong, nonatomic)PFObject *lessonNumber;
+
+@property (nonatomic, assign) int count;
+
 
 
 @end

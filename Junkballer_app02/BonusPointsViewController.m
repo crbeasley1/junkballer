@@ -9,6 +9,7 @@
 #import "BonusPointsViewController.h"
 #import <Parse/Parse.h>
 
+
 @interface BonusPointsViewController ()
 
 
@@ -57,6 +58,35 @@
         
     }];
 }
+
+- (IBAction)buttonPressed:(id)sender {
+    
+    static int count;
+    count++;
+    
+    
+    PFObject *lesson = [PFObject objectWithClassName:@"Lessons"];
+    lesson[@"Lessons"] = [NSNumber numberWithInt:count];
+    lesson[@"User"] = [PFUser currentUser];
+    [lesson saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+        if (error) {
+            UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Oops!" message: [error.userInfo objectForKey:@"error"] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+            [alertView show];
+            
+        }
+        else {
+            NSLog(@"Yeah, bitch!");
+        }
+    }];
+
+    
+    //*int currentPoints = [playerObject[@"points"] intValue];
+    //playerObject[@"points"] = [NSNumber numberWithInt:currentPoints + 5];
+    //playerObject[@"lastScanDate"] = [NSDate date];
+    //[playerObject saveInBackground];*/
+
+
+ }
 
 - (void)viewDidLoad
 {
