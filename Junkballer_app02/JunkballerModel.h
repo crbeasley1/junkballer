@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <Parse/Parse.h>
+
 @interface JunkballerModel : NSObject
 + (id)sharedManager;
 @property(strong, nonatomic)NSArray *allPlayers;

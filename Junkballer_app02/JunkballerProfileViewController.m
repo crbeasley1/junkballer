@@ -9,16 +9,26 @@
 #import "JunkballerProfileViewController.h"
 #import "BonusPointsViewController.h"
 #import "JunkballerRedeemPointsTableViewController.h"
+#import "ScannerViewController.h"
+#import "AddPlayerViewController.h"
+#import "JunkballerModel.h"
+#import <KiipSDK/KiipSDK.h>
+
 
 @interface JunkballerProfileViewController ()
 @property(strong, nonatomic)IBOutlet UILabel *nameLabel;
 @property(strong, nonatomic)IBOutlet UILabel *pointsLabel;
+
 @end
 
 @implementation JunkballerProfileViewController
 @synthesize junkerballer = _junkerballer;
 @synthesize nameLabel = _nameLabel;
 @synthesize pointsLabel = _pointsLabel;
+@synthesize playerObject = _playerObject;
+@synthesize model = _model;
+
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -32,6 +42,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.model = [JunkballerModel sharedManager];
     // Do any additional setup after loading the view.
     if(self.junkerballer){
         self.nameLabel.text = self.junkerballer[@"name"];
@@ -77,4 +88,66 @@
 }
 
 
+- (IBAction)checkIn:(id)sender {
+    
+        NSDate *currentDate = [NSDate date];
+        //NSLog(@"%@", currentDate);
+        //self.junkerballer[@"checkInDate"] = currentDate;
+    
+    
+    
+    
+    
+   if(self.junkerballer[@"checkInDate"] == nil || 28800 < [currentDate timeIntervalSinceDate:((NSDate*)self.junkerballer[@"checkInDate"])])
+       
+   {
+       //do stuff
+       
+       int playersCurrentPoints = [self.junkerballer[@"points"] intValue];
+       self.junkerballer[@"points"]= [NSNumber numberWithInt:playersCurrentPoints + 5];
+       self.junkerballer[@"checkInDate"] = [NSDate date];
+       [self.junkerballer saveInBackground];
+       
+       [self.junkerballer saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+           if (!error) {
+               // Dismiss the NewPostViewController and show the BlogTableViewController
+               UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Points Added!" message: [error.userInfo objectForKey:@"error"] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+               [alertView show];
+               
+               
+               
+                          }
+
+       }];
+       
+
+       
+       
+       
+       
+       
+   }
+    
+  
+    
+    
+    else
+        {
+        
+        //show alert <24 hrs.
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Oops!" message:@"You can only check in once a day! Try getting some bonus points!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [alertView performSelectorOnMainThread:@selector(show) withObject:nil waitUntilDone:YES];
+        [alertView show];
+        
+        
+    }
+    
+    
+    
+    
+    
+}
+
+
 @end
+

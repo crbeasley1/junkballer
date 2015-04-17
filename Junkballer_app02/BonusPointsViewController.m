@@ -8,7 +8,7 @@
 
 #import "BonusPointsViewController.h"
 #import <Parse/Parse.h>
-
+#import <KiipSDK/KiipSDK.h>
 
 @interface BonusPointsViewController ()
 
@@ -29,7 +29,7 @@
             pointsToAdd = 15;
             break;
         case 3:
-            pointsToAdd = 15;
+            pointsToAdd = 10;
             break;
         case 4:
             pointsToAdd = 10;
@@ -51,23 +51,28 @@
             // Dismiss the NewPostViewController and show the BlogTableViewController
             UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Good work. Points Added!" message: [error.userInfo objectForKey:@"error"] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
             [alertView show];
-        }
+                    }
         else {
             [self.navigationController popToRootViewControllerAnimated:YES];
         }
         
     }];
+    
+    
+
+
 }
 
 - (IBAction)buttonPressed:(id)sender {
     
-    static int count;
-    count++;
+    //static int count;
+    //count++;
     
     
     PFObject *lesson = [PFObject objectWithClassName:@"Lessons"];
-    lesson[@"Lessons"] = [NSNumber numberWithInt:count];
+   
     lesson[@"User"] = [PFUser currentUser];
+    lesson[@"Player"] = self.junkerballer;
     [lesson saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
         if (error) {
             UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Oops!" message: [error.userInfo objectForKey:@"error"] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
@@ -76,16 +81,13 @@
         }
         else {
             NSLog(@"Yeah, bitch!");
-        }
+            
+
+                                }
     }];
-
     
-    //*int currentPoints = [playerObject[@"points"] intValue];
-    //playerObject[@"points"] = [NSNumber numberWithInt:currentPoints + 5];
-    //playerObject[@"lastScanDate"] = [NSDate date];
-    //[playerObject saveInBackground];*/
-
-
+    
+    
  }
 
 - (void)viewDidLoad

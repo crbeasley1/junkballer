@@ -10,6 +10,8 @@
 #import "JunkballerProfileViewController.h"
 #import "Parse/Parse.h"
 #import "JunkballerModel.h"
+#import <KiipSDK/KiipSDK.h>
+
 
 @interface ClubProfileViewController ()
 
@@ -21,7 +23,7 @@
 
 @synthesize clubName = _clubName;
 @synthesize currentUser = _currentUser;
-
+@synthesize lessonNumber = _lessonNumber;
 
 
 - (void)viewDidLoad {
@@ -38,9 +40,17 @@
     
     NSString *clubName =[[PFUser currentUser] objectForKey:@"username"];
     self.clubName.text = clubName;
-    
-    NSString *lessonNumber = [[PFUser currentUser] objectForKey:@"Lessons"];
-    self.lessonNumber.text = lessonNumber;
+   
+    PFQuery *query = [PFQuery queryWithClassName:@"Lessons"];
+    [query countObjectsInBackgroundWithBlock:^(int count, NSError *error) {
+        if (!error) {
+            // The count request succeeded. Log the count
+            NSLog(@"Junkballer has generated %d lessons for you!", count);
+            self.lessonNumber.text = [NSString stringWithFormat:@"%d",count];
+        } else {
+            // The request failed
+        }
+    }];
 }
 
 
@@ -59,4 +69,23 @@
 }
 */
 
+- (IBAction)buttonbitch:(id)sender {
+    
+    [[Kiip sharedInstance] saveMoment:@"fivhundo" withCompletionHandler:^(KPPoptart *poptart, NSError *error) {
+        if (error) {
+            NSLog(@"something's wrong");
+            // handle with an Alert dialog.
+        }
+        if (poptart) {
+            NSLog(@"Successful moment save. Showing reward.");
+            [poptart show];
+        }
+        // handle case with no reward available.
+        if (!poptart) {
+            NSLog(@"Successful moment save but no reward available.");
+        }
+    }];
+    
+    NSLog(@"Jack shit happened");
+}
 @end

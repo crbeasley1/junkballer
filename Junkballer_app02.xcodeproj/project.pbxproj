@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		06251F81D56455CFF2A04744 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 15D50C108072B8925B3B75A2 /* libPods.a */; };
 		229373B51A0EA616004D7E0B /* JunkballerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 229373B31A0EA616004D7E0B /* JunkballerTableViewController.m */; };
 		22A5F3561953D7F000F04984 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A5F3551953D7F000F04984 /* ViewController.m */; };
 		22B983CC1A3E7E4000EFBC1D /* beep.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 22B983CB1A3E7E4000EFBC1D /* beep.mp3 */; };
@@ -31,7 +32,7 @@
 		22C9492A194022E80026F3B1 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C94921194022E80026F3B1 /* QuartzCore.framework */; };
 		22C9492B194022E80026F3B1 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C94922194022E80026F3B1 /* Security.framework */; };
 		22C9492C194022E80026F3B1 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C94923194022E80026F3B1 /* StoreKit.framework */; };
-		22C9492D194022E80026F3B1 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C94924194022E80026F3B1 /* SystemConfiguration.framework */; };
+		22C9492D194022E80026F3B1 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C94924194022E80026F3B1 /* SystemConfiguration.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		22CF402B1A0EF68D004A1EEC /* BonusPointsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22CF402A1A0EF68D004A1EEC /* BonusPointsViewController.m */; };
 		F16630B01A1D6147000BD1CE /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F16630AC1A1D6147000BD1CE /* LoginViewController.m */; };
 		F16630B11A1D6147000BD1CE /* rewards copy.png in Resources */ = {isa = PBXBuildFile; fileRef = F16630AD1A1D6147000BD1CE /* rewards copy.png */; };
@@ -43,10 +44,22 @@
 		F16630D31A1D618E000BD1CE /* app_launchR4.png in Resources */ = {isa = PBXBuildFile; fileRef = F16630CB1A1D618E000BD1CE /* app_launchR4.png */; };
 		F16630D41A1D618E000BD1CE /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = F16630CC1A1D618E000BD1CE /* arrow.png */; };
 		F16630D71A1D6223000BD1CE /* JunkballerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F16630D61A1D6223000BD1CE /* JunkballerModel.m */; };
-		F16630D91A1D6369000BD1CE /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 227F61A119422F8C00FBA9EA /* Parse.framework */; };
 		F1AA273C196211FD00208E6C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1AA273B196211FD00208E6C /* AVFoundation.framework */; };
 		F1AA274219621EA700208E6C /* JunkballerProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1AA274119621EA700208E6C /* JunkballerProfileViewController.m */; };
 		F1AA27481962232300208E6C /* JunkballerRedeemPointsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1AA27471962232300208E6C /* JunkballerRedeemPointsTableViewController.m */; };
+		F81940B01ABB17C400C8C23B /* LessonsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F81940AF1ABB17C400C8C23B /* LessonsTableViewController.m */; };
+		F87B9D9F1AD0EC4E006690C1 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F87B9D9E1AD0EC4E006690C1 /* CoreTelephony.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		F87B9DA01AD2D436006690C1 /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F89256CD1AD02FE900C6790E /* libz.1.2.5.dylib */; };
+		F87F678A1ADB2349006B5259 /* jballlaunch.png in Resources */ = {isa = PBXBuildFile; fileRef = F87F67881ADB2349006B5259 /* jballlaunch.png */; };
+		F87F678B1ADB2349006B5259 /* jballlaunch_R4.png in Resources */ = {isa = PBXBuildFile; fileRef = F87F67891ADB2349006B5259 /* jballlaunch_R4.png */; };
+		F8ACDEDA1AE07FAD00449FA8 /* KiipSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8B0A7791ADCC51F00949BDE /* KiipSDK.framework */; };
+		F8ACDEDC1AE07FE500449FA8 /* KiipSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F8ACDEDB1AE07FE500449FA8 /* KiipSDKResources.bundle */; };
+		F8B0A77E1ADCC5F600949BDE /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8B0A77D1ADCC5F600949BDE /* AdSupport.framework */; };
+		F8B0A7801ADCC60900949BDE /* PassKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8B0A77F1ADCC60900949BDE /* PassKit.framework */; };
+		F8B0A7821ADCC61B00949BDE /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8B0A7811ADCC61B00949BDE /* MediaPlayer.framework */; };
+		F8BA963C1AD0D9AF00B48309 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8BA963B1AD0D9AF00B48309 /* CoreImage.framework */; };
+		F8BA96521AD0DA0300B48309 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8BA96511AD0DA0300B48309 /* ImageIO.framework */; };
+		F8CC5B8B1AD0DFD700AFE27B /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = F8CC5B8A1AD0DFD700AFE27B /* Podfile */; };
 		F8E2B2581AB4F8E80064CF93 /* ClubProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E2B2551AB4F8E80064CF93 /* ClubProfileViewController.m */; };
 		F8E2B2591AB4F8E80064CF93 /* ScannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E2B2571AB4F8E80064CF93 /* ScannerViewController.m */; };
 		F8E2B2741AB4FDB70064CF93 /* 05.png in Resources */ = {isa = PBXBuildFile; fileRef = F8E2B25B1AB4FDB70064CF93 /* 05.png */; };
@@ -56,7 +69,6 @@
 		F8E2B2791AB4FDB70064CF93 /* app_home.png in Resources */ = {isa = PBXBuildFile; fileRef = F8E2B2601AB4FDB70064CF93 /* app_home.png */; };
 		F8E2B27A1AB4FDB70064CF93 /* app_launchimg.png in Resources */ = {isa = PBXBuildFile; fileRef = F8E2B2611AB4FDB70064CF93 /* app_launchimg.png */; };
 		F8E2B27B1AB4FDB70064CF93 /* app_launchR4.png in Resources */ = {isa = PBXBuildFile; fileRef = F8E2B2621AB4FDB70064CF93 /* app_launchR4.png */; };
-		F8E2B27C1AB4FDB70064CF93 /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = F8E2B2631AB4FDB70064CF93 /* arrow.png */; };
 		F8E2B27D1AB4FDB70064CF93 /* camera.png in Resources */ = {isa = PBXBuildFile; fileRef = F8E2B2641AB4FDB70064CF93 /* camera.png */; };
 		F8E2B27E1AB4FDB70064CF93 /* camera@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F8E2B2651AB4FDB70064CF93 /* camera@2x.png */; };
 		F8E2B2801AB4FDB70064CF93 /* friends.png in Resources */ = {isa = PBXBuildFile; fileRef = F8E2B2671AB4FDB70064CF93 /* friends.png */; };
@@ -68,6 +80,7 @@
 		F8E2B2881AB4FDB70064CF93 /* paybill.png in Resources */ = {isa = PBXBuildFile; fileRef = F8E2B26F1AB4FDB70064CF93 /* paybill.png */; };
 		F8E2B2891AB4FDB70064CF93 /* photo (15).JPG in Resources */ = {isa = PBXBuildFile; fileRef = F8E2B2701AB4FDB70064CF93 /* photo (15).JPG */; };
 		F8E2B28C1AB4FDB70064CF93 /* rewards.png in Resources */ = {isa = PBXBuildFile; fileRef = F8E2B2731AB4FDB70064CF93 /* rewards.png */; };
+		F8E37AF11AD8A34600B94088 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8E37AF01AD8A34600B94088 /* Parse.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,7 +94,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		227F61A119422F8C00FBA9EA /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		15D50C108072B8925B3B75A2 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		229373B31A0EA616004D7E0B /* JunkballerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = JunkballerTableViewController.m; sourceTree = "<group>"; };
 		22A5F3541953D7E600F04984 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		22A5F3551953D7F000F04984 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
@@ -114,6 +127,8 @@
 		22C94924194022E80026F3B1 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		22CF402A1A0EF68D004A1EEC /* BonusPointsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BonusPointsViewController.m; sourceTree = "<group>"; };
 		22CF402C1A0EF6BD004A1EEC /* JunkballerTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JunkballerTableViewController.h; sourceTree = "<group>"; };
+		45D209209E2891AC314E3E72 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		7DCA351CD62D55CB0C5D3441 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		F16630AB1A1D6147000BD1CE /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		F16630AC1A1D6147000BD1CE /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		F16630AD1A1D6147000BD1CE /* rewards copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "rewards copy.png"; path = "../rewards copy.png"; sourceTree = "<group>"; };
@@ -134,6 +149,29 @@
 		F1AA274119621EA700208E6C /* JunkballerProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JunkballerProfileViewController.m; sourceTree = "<group>"; };
 		F1AA27461962232300208E6C /* JunkballerRedeemPointsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JunkballerRedeemPointsTableViewController.h; sourceTree = "<group>"; };
 		F1AA27471962232300208E6C /* JunkballerRedeemPointsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JunkballerRedeemPointsTableViewController.m; sourceTree = "<group>"; };
+		F81940AE1ABB17C400C8C23B /* LessonsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LessonsTableViewController.h; path = ../LessonsTableViewController.h; sourceTree = "<group>"; };
+		F81940AF1ABB17C400C8C23B /* LessonsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LessonsTableViewController.m; path = ../LessonsTableViewController.m; sourceTree = "<group>"; };
+		F87B9D9C1AD0E9B3006690C1 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		F87B9D9E1AD0EC4E006690C1 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		F87F67881ADB2349006B5259 /* jballlaunch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jballlaunch.png; sourceTree = "<group>"; };
+		F87F67891ADB2349006B5259 /* jballlaunch_R4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jballlaunch_R4.png; sourceTree = "<group>"; };
+		F89256B61AD02D3800C6790E /* libPods-Junkballer_app02-Appboy-iOS-SDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-Junkballer_app02-Appboy-iOS-SDK.a"; path = "Pods/../build/Debug-iphoneos/libPods-Junkballer_app02-Appboy-iOS-SDK.a"; sourceTree = "<group>"; };
+		F89256B71AD02D3800C6790E /* libPods-Junkballer_app02-SDWebImage.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-Junkballer_app02-SDWebImage.a"; path = "Pods/../build/Debug-iphoneos/libPods-Junkballer_app02-SDWebImage.a"; sourceTree = "<group>"; };
+		F89256B81AD02D3800C6790E /* libPods-Junkballer_app02.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-Junkballer_app02.a"; path = "Pods/../build/Debug-iphoneos/libPods-Junkballer_app02.a"; sourceTree = "<group>"; };
+		F89256B91AD02D3800C6790E /* libPods-Junkballer_app02Tests-Appboy-iOS-SDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-Junkballer_app02Tests-Appboy-iOS-SDK.a"; path = "Pods/../build/Debug-iphoneos/libPods-Junkballer_app02Tests-Appboy-iOS-SDK.a"; sourceTree = "<group>"; };
+		F89256BA1AD02D3800C6790E /* libPods-Junkballer_app02Tests-SDWebImage.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-Junkballer_app02Tests-SDWebImage.a"; path = "Pods/../build/Debug-iphoneos/libPods-Junkballer_app02Tests-SDWebImage.a"; sourceTree = "<group>"; };
+		F89256BB1AD02D3800C6790E /* libPods-Junkballer_app02Tests.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-Junkballer_app02Tests.a"; path = "Pods/../build/Debug-iphoneos/libPods-Junkballer_app02Tests.a"; sourceTree = "<group>"; };
+		F89256BC1AD02D3800C6790E /* libPods-SDWebImage.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-SDWebImage.a"; path = "Pods/../build/Debug-iphoneos/libPods-SDWebImage.a"; sourceTree = "<group>"; };
+		F89256CD1AD02FE900C6790E /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
+		F8ACDEDB1AE07FE500449FA8 /* KiipSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = KiipSDKResources.bundle; path = "../../../../../Downloads/Kiip-iOS-SDK-v2.1.1_1/KiipSDK.framework/Versions/A/Resources/KiipSDKResources.bundle"; sourceTree = "<group>"; };
+		F8B0A7791ADCC51F00949BDE /* KiipSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KiipSDK.framework; path = "../../../../../Downloads/Kiip-iOS-SDK-v2.1.1_1/KiipSDK.framework"; sourceTree = "<group>"; };
+		F8B0A77D1ADCC5F600949BDE /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		F8B0A77F1ADCC60900949BDE /* PassKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PassKit.framework; path = System/Library/Frameworks/PassKit.framework; sourceTree = SDKROOT; };
+		F8B0A7811ADCC61B00949BDE /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		F8BA96391AD0D94900B48309 /* libPods-Appboy-iOS-SDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-Appboy-iOS-SDK.a"; path = "Pods/../build/Debug-iphoneos/libPods-Appboy-iOS-SDK.a"; sourceTree = "<group>"; };
+		F8BA963B1AD0D9AF00B48309 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		F8BA96511AD0DA0300B48309 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		F8CC5B8A1AD0DFD700AFE27B /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		F8E2B2541AB4F8E80064CF93 /* ClubProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClubProfileViewController.h; sourceTree = "<group>"; };
 		F8E2B2551AB4F8E80064CF93 /* ClubProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClubProfileViewController.m; sourceTree = "<group>"; };
 		F8E2B2561AB4F8E80064CF93 /* ScannerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScannerViewController.h; sourceTree = "<group>"; };
@@ -145,7 +183,6 @@
 		F8E2B2601AB4FDB70064CF93 /* app_home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = app_home.png; sourceTree = "<group>"; };
 		F8E2B2611AB4FDB70064CF93 /* app_launchimg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = app_launchimg.png; sourceTree = "<group>"; };
 		F8E2B2621AB4FDB70064CF93 /* app_launchR4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = app_launchR4.png; sourceTree = "<group>"; };
-		F8E2B2631AB4FDB70064CF93 /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow.png; sourceTree = "<group>"; };
 		F8E2B2641AB4FDB70064CF93 /* camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera.png; sourceTree = "<group>"; };
 		F8E2B2651AB4FDB70064CF93 /* camera@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camera@2x.png"; sourceTree = "<group>"; };
 		F8E2B2671AB4FDB70064CF93 /* friends.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = friends.png; sourceTree = "<group>"; };
@@ -157,6 +194,7 @@
 		F8E2B26F1AB4FDB70064CF93 /* paybill.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paybill.png; sourceTree = "<group>"; };
 		F8E2B2701AB4FDB70064CF93 /* photo (15).JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "photo (15).JPG"; sourceTree = "<group>"; };
 		F8E2B2731AB4FDB70064CF93 /* rewards.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rewards.png; sourceTree = "<group>"; };
+		F8E37AF01AD8A34600B94088 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,7 +202,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F16630D91A1D6369000BD1CE /* Parse.framework in Frameworks */,
+				F8ACDEDA1AE07FAD00449FA8 /* KiipSDK.framework in Frameworks */,
+				F8B0A7821ADCC61B00949BDE /* MediaPlayer.framework in Frameworks */,
+				F8B0A7801ADCC60900949BDE /* PassKit.framework in Frameworks */,
+				F8B0A77E1ADCC5F600949BDE /* AdSupport.framework in Frameworks */,
+				F8E37AF11AD8A34600B94088 /* Parse.framework in Frameworks */,
+				F87B9DA01AD2D436006690C1 /* libz.1.2.5.dylib in Frameworks */,
+				F87B9D9F1AD0EC4E006690C1 /* CoreTelephony.framework in Frameworks */,
+				F8BA96521AD0DA0300B48309 /* ImageIO.framework in Frameworks */,
+				22C948D51940162D0026F3B1 /* Foundation.framework in Frameworks */,
+				F8BA963C1AD0D9AF00B48309 /* CoreImage.framework in Frameworks */,
 				F1AA273C196211FD00208E6C /* AVFoundation.framework in Frameworks */,
 				22C94925194022E80026F3B1 /* AudioToolbox.framework in Frameworks */,
 				22C94926194022E80026F3B1 /* CFNetwork.framework in Frameworks */,
@@ -177,7 +224,7 @@
 				22C9492D194022E80026F3B1 /* SystemConfiguration.framework in Frameworks */,
 				22C948D71940162D0026F3B1 /* CoreGraphics.framework in Frameworks */,
 				22C948D91940162D0026F3B1 /* UIKit.framework in Frameworks */,
-				22C948D51940162D0026F3B1 /* Foundation.framework in Frameworks */,
+				06251F81D56455CFF2A04744 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,6 +244,8 @@
 		22C948C81940162D0026F3B1 = {
 			isa = PBXGroup;
 			children = (
+				F8ACDEDB1AE07FE500449FA8 /* KiipSDKResources.bundle */,
+				F8CC5B8A1AD0DFD700AFE27B /* Podfile */,
 				22B983CB1A3E7E4000EFBC1D /* beep.mp3 */,
 				F8E2B25A1AB4FDB70064CF93 /* images */,
 				22C94903194016810026F3B1 /* MainStoryboard.storyboard */,
@@ -204,6 +253,7 @@
 				22C948F31940162E0026F3B1 /* Junkballer_app02Tests */,
 				22C948D31940162D0026F3B1 /* Frameworks */,
 				22C948D21940162D0026F3B1 /* Products */,
+				5A04F087054015AFB752FA1F /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -219,8 +269,25 @@
 		22C948D31940162D0026F3B1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F8B0A7811ADCC61B00949BDE /* MediaPlayer.framework */,
+				F8B0A77F1ADCC60900949BDE /* PassKit.framework */,
+				F8B0A77D1ADCC5F600949BDE /* AdSupport.framework */,
+				F8B0A7791ADCC51F00949BDE /* KiipSDK.framework */,
+				F8E37AF01AD8A34600B94088 /* Parse.framework */,
+				F87B9D9E1AD0EC4E006690C1 /* CoreTelephony.framework */,
+				F87B9D9C1AD0E9B3006690C1 /* libsqlite3.dylib */,
+				F8BA96511AD0DA0300B48309 /* ImageIO.framework */,
+				F8BA963B1AD0D9AF00B48309 /* CoreImage.framework */,
+				F89256CD1AD02FE900C6790E /* libz.1.2.5.dylib */,
+				F8BA96391AD0D94900B48309 /* libPods-Appboy-iOS-SDK.a */,
+				F89256B61AD02D3800C6790E /* libPods-Junkballer_app02-Appboy-iOS-SDK.a */,
+				F89256B71AD02D3800C6790E /* libPods-Junkballer_app02-SDWebImage.a */,
+				F89256B81AD02D3800C6790E /* libPods-Junkballer_app02.a */,
+				F89256B91AD02D3800C6790E /* libPods-Junkballer_app02Tests-Appboy-iOS-SDK.a */,
+				F89256BA1AD02D3800C6790E /* libPods-Junkballer_app02Tests-SDWebImage.a */,
+				F89256BB1AD02D3800C6790E /* libPods-Junkballer_app02Tests.a */,
+				F89256BC1AD02D3800C6790E /* libPods-SDWebImage.a */,
 				F1AA273B196211FD00208E6C /* AVFoundation.framework */,
-				227F61A119422F8C00FBA9EA /* Parse.framework */,
 				22C9491C194022E80026F3B1 /* AudioToolbox.framework */,
 				22C9491D194022E80026F3B1 /* CFNetwork.framework */,
 				22C9491E194022E80026F3B1 /* CoreLocation.framework */,
@@ -234,6 +301,7 @@
 				22C948D61940162D0026F3B1 /* CoreGraphics.framework */,
 				22C948D81940162D0026F3B1 /* UIKit.framework */,
 				22C948ED1940162E0026F3B1 /* XCTest.framework */,
+				15D50C108072B8925B3B75A2 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -241,6 +309,8 @@
 		22C948DA1940162D0026F3B1 /* Junkballer_app02 */ = {
 			isa = PBXGroup;
 			children = (
+				22C948E31940162D0026F3B1 /* JunkballerAppDelegate.h */,
+				22C948E41940162D0026F3B1 /* JunkballerAppDelegate.m */,
 				F16630D51A1D6223000BD1CE /* JunkballerModel.h */,
 				F16630D61A1D6223000BD1CE /* JunkballerModel.m */,
 				F16630C71A1D618E000BD1CE /* AddPlayerViewController.h */,
@@ -249,8 +319,6 @@
 				F16630AC1A1D6147000BD1CE /* LoginViewController.m */,
 				F16630AE1A1D6147000BD1CE /* SignupViewController.h */,
 				F16630AF1A1D6147000BD1CE /* SignupViewController.m */,
-				22CF402C1A0EF6BD004A1EEC /* JunkballerTableViewController.h */,
-				229373B31A0EA616004D7E0B /* JunkballerTableViewController.m */,
 				F1AA27461962232300208E6C /* JunkballerRedeemPointsTableViewController.h */,
 				F1AA27471962232300208E6C /* JunkballerRedeemPointsTableViewController.m */,
 				F1AA274019621EA700208E6C /* JunkballerProfileViewController.h */,
@@ -261,10 +329,12 @@
 				22A5F3551953D7F000F04984 /* ViewController.m */,
 				F8E2B2541AB4F8E80064CF93 /* ClubProfileViewController.h */,
 				F8E2B2551AB4F8E80064CF93 /* ClubProfileViewController.m */,
+				F81940AE1ABB17C400C8C23B /* LessonsTableViewController.h */,
+				F81940AF1ABB17C400C8C23B /* LessonsTableViewController.m */,
+				22CF402C1A0EF6BD004A1EEC /* JunkballerTableViewController.h */,
+				229373B31A0EA616004D7E0B /* JunkballerTableViewController.m */,
 				F8E2B2561AB4F8E80064CF93 /* ScannerViewController.h */,
 				F8E2B2571AB4F8E80064CF93 /* ScannerViewController.m */,
-				22C948E31940162D0026F3B1 /* JunkballerAppDelegate.h */,
-				22C948E41940162D0026F3B1 /* JunkballerAppDelegate.m */,
 				22C948E61940162D0026F3B1 /* Images.xcassets */,
 				22C948DB1940162D0026F3B1 /* Supporting Files */,
 			);
@@ -300,9 +370,20 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		5A04F087054015AFB752FA1F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7DCA351CD62D55CB0C5D3441 /* Pods.debug.xcconfig */,
+				45D209209E2891AC314E3E72 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F8E2B25A1AB4FDB70064CF93 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				F87F67881ADB2349006B5259 /* jballlaunch.png */,
+				F87F67891ADB2349006B5259 /* jballlaunch_R4.png */,
 				F16630C61A1D618E000BD1CE /* addplayer.png */,
 				F16630C91A1D618E000BD1CE /* app_home.png */,
 				F16630CA1A1D618E000BD1CE /* app_launchimg.png */,
@@ -316,7 +397,6 @@
 				F8E2B2601AB4FDB70064CF93 /* app_home.png */,
 				F8E2B2611AB4FDB70064CF93 /* app_launchimg.png */,
 				F8E2B2621AB4FDB70064CF93 /* app_launchR4.png */,
-				F8E2B2631AB4FDB70064CF93 /* arrow.png */,
 				F8E2B2641AB4FDB70064CF93 /* camera.png */,
 				F8E2B2651AB4FDB70064CF93 /* camera@2x.png */,
 				F8E2B2671AB4FDB70064CF93 /* friends.png */,
@@ -340,9 +420,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 22C948FD1940162E0026F3B1 /* Build configuration list for PBXNativeTarget "Junkballer_app02" */;
 			buildPhases = (
+				81B1DAECD72FC993610698AC /* Check Pods Manifest.lock */,
 				22C948CD1940162D0026F3B1 /* Sources */,
 				22C948CE1940162D0026F3B1 /* Frameworks */,
 				22C948CF1940162D0026F3B1 /* Resources */,
+				E059DADEAC880FBEDF5FD099 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -421,9 +503,11 @@
 				F8E2B28C1AB4FDB70064CF93 /* rewards.png in Resources */,
 				F16630D11A1D618E000BD1CE /* app_home.png in Resources */,
 				F8E2B27A1AB4FDB70064CF93 /* app_launchimg.png in Resources */,
+				F8ACDEDC1AE07FE500449FA8 /* KiipSDKResources.bundle in Resources */,
 				F8E2B2821AB4FDB70064CF93 /* inbox.png in Resources */,
 				F8E2B2801AB4FDB70064CF93 /* friends.png in Resources */,
 				F8E2B27B1AB4FDB70064CF93 /* app_launchR4.png in Resources */,
+				F87F678A1ADB2349006B5259 /* jballlaunch.png in Resources */,
 				22B983CC1A3E7E4000EFBC1D /* beep.mp3 in Resources */,
 				F16630D41A1D618E000BD1CE /* arrow.png in Resources */,
 				22C94904194016810026F3B1 /* MainStoryboard.storyboard in Resources */,
@@ -432,11 +516,12 @@
 				F8E2B2861AB4FDB70064CF93 /* junkballer_dimmed.png in Resources */,
 				F8E2B2771AB4FDB70064CF93 /* 15.png in Resources */,
 				22C948DF1940162D0026F3B1 /* InfoPlist.strings in Resources */,
+				F87F678B1ADB2349006B5259 /* jballlaunch_R4.png in Resources */,
 				F8E2B2881AB4FDB70064CF93 /* paybill.png in Resources */,
 				F8E2B27D1AB4FDB70064CF93 /* camera.png in Resources */,
 				22C948E71940162D0026F3B1 /* Images.xcassets in Resources */,
 				F16630CF1A1D618E000BD1CE /* addplayer.png in Resources */,
-				F8E2B27C1AB4FDB70064CF93 /* arrow.png in Resources */,
+				F8CC5B8B1AD0DFD700AFE27B /* Podfile in Resources */,
 				F16630B11A1D6147000BD1CE /* rewards copy.png in Resources */,
 				F8E2B2811AB4FDB70064CF93 /* friends@2x.png in Resources */,
 				F8E2B2891AB4FDB70064CF93 /* photo (15).JPG in Resources */,
@@ -454,6 +539,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		81B1DAECD72FC993610698AC /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E059DADEAC880FBEDF5FD099 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		22C948CD1940162D0026F3B1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -470,6 +588,7 @@
 				F16630B01A1D6147000BD1CE /* LoginViewController.m in Sources */,
 				F8E2B2581AB4F8E80064CF93 /* ClubProfileViewController.m in Sources */,
 				229373B51A0EA616004D7E0B /* JunkballerTableViewController.m in Sources */,
+				F81940B01ABB17C400C8C23B /* LessonsTableViewController.m in Sources */,
 				22C948E51940162D0026F3B1 /* JunkballerAppDelegate.m in Sources */,
 				22C948E11940162D0026F3B1 /* main.m in Sources */,
 			);
@@ -585,18 +704,21 @@
 		};
 		22C948FE1940162E0026F3B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DCA351CD62D55CB0C5D3441 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"/Users/crbeasley/Downloads/Kiip-iOS-SDK-v2.1.1_1",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Junkballer_app02/Junkballer_app02-Prefix.pch";
 				INFOPLIST_FILE = "Junkballer_app02/Junkballer_app02-Info.plist";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
@@ -605,18 +727,21 @@
 		};
 		22C948FF1940162E0026F3B1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45D209209E2891AC314E3E72 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"/Users/crbeasley/Downloads/Kiip-iOS-SDK-v2.1.1_1",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Junkballer_app02/Junkballer_app02-Prefix.pch";
 				INFOPLIST_FILE = "Junkballer_app02/Junkballer_app02-Info.plist";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
@@ -631,6 +756,7 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Junkballer_app02/Junkballer_app02-Prefix.pch";
@@ -653,6 +779,7 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Junkballer_app02/Junkballer_app02-Prefix.pch";

@@ -19,7 +19,8 @@
 @property (strong, nonatomic) IBOutlet UILabel *clubName;
 @property (strong, nonatomic) PFUser *currentUser;
 
-@property (strong, nonatomic) IBOutlet UILabel *lessonNumber;
+@property (weak, nonatomic) IBOutlet UILabel *lessonNumber;
 
+- (IBAction)buttonbitch:(id)sender;
 @end
 

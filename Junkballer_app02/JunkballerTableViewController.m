@@ -29,6 +29,7 @@
     [super viewDidLoad];
     self.model = [JunkballerModel sharedManager];
     
+    
 }
 
 -(void)viewWillAppear:(BOOL)animated {
@@ -62,7 +63,7 @@
     static NSString *CellIdentifier = @"junkballerCell";
     NSLog(@"%@",CellIdentifier);
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"junkballerCell" forIndexPath:indexPath];
-    cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
+    //cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
     PFObject *junkballers = [self.model.allPlayers objectAtIndex:indexPath.row];
     [cell.textLabel setText:[junkballers objectForKey:@"name"]];
     cell.detailTextLabel.text = [NSString stringWithFormat:@"%@",

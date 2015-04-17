@@ -8,8 +8,21 @@
 
 #import <UIKit/UIKit.h>
 #import <Parse/Parse.h>
+#import "JunkballerModel.h"
+#import <Foundation/Foundation.h> 
+
 
 @interface JunkballerProfileViewController : UIViewController
 @property(strong, nonatomic)PFObject *junkerballer;
+@property(strong, nonatomic)PFObject *playerObject;
+@property(strong, nonatomic)NSObject *JunkballerModel;
+@property(strong, nonatomic)NSArray *allPlayers;
+@property (strong, nonatomic)JunkballerModel *model;
+@property(strong, nonatomic)NSDate *currentDate;
+@property(strong, nonatomic)NSDate *checkInDate;
+@property(strong,nonatomic)NSDate *updatedAt;
+@property(nonatomic, readonly) NSUInteger tapCount;
+
+- (IBAction)checkIn:(id)sender;
 
 @end

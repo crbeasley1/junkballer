@@ -184,8 +184,11 @@
                 for(PFObject *playerObject in self.model.allPlayers){
                     //search for player's code here
                     
-                    if([playerObject[@"QRCode"] isEqualToString:[metadataObj stringValue]]){
+                    if([playerObject[@"QRCode"] isEqualToString:[metadataObj stringValue]])
+                        
+                    {
                         if(playerObject[@"lastScanDate"] == nil || 43200 < [currentDate timeIntervalSinceDate:((NSDate*)playerObject[@"lastScanDate"])]){
+                            
                             //Adds points
                             
                             int currentPoints = [playerObject[@"points"] intValue];

@@ -16,6 +16,7 @@
 @property(nonatomic, readonly, retain) UILabel *detailTextLabel;
 @property (nonatomic, assign) BOOL pullToRefreshEnabled;
 @property(strong, nonatomic)NSArray *allPlayers;
+@property(strong,nonatomic)NSString *objectId;
 
 
 

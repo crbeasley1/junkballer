@@ -14,8 +14,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *playernameField;
 
 
-@property (weak, nonatomic) IBOutlet UITextField *playeremailField;
-
+@property (weak, nonatomic) IBOutlet UITextField *playerPhoneField;
 
 - (IBAction)backButton:(id)sender;
  

@@ -8,6 +8,7 @@
 
 #import "JunkballerAppDelegate.h"
 #import <Parse/Parse.h>
+#import "AppboyKit.h"
 
 @implementation JunkballerAppDelegate
 
@@ -18,6 +19,20 @@
                   clientKey:@"8KBcYvUjtOxXcaa3RHJuE0GsOKcsZSklpe3zj2Mx"];
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
     return YES;
+    
+    Kiip *kiip = [[Kiip alloc] initWithAppKey:@"b25e785083b5df983efae6be07896f8f" andSecret:@"c5c73bb5ed5819a73bc8f931b5e35ac4"];
+    kiip.delegate = self;
+    [Kiip setSharedInstance:kiip];
+    return YES;
+
+    
+    [Appboy startWithApiKey:@"dfd4266f-e304-4a86-a555-1f745e6d5596"
+              inApplication:application
+          withLaunchOptions:launchOptions];
+    
+   
+    
+    
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

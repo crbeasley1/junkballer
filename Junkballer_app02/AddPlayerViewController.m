@@ -25,7 +25,7 @@
 
 - (void)viewDidLoad
 {
-    self.Junkballers = [PFObject objectWithClassName:@"Junkballers"];
+    self.junkballers = [PFObject objectWithClassName:@"Junkballers"];
     
     [super viewDidLoad];
     
@@ -46,12 +46,12 @@
 
 - (IBAction)addPlayer:(id)sender {
     NSString *playerName = [self.playernameField.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
-    NSString *playerEmail = [self.playeremailField.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+    NSString *playerPhoneField = [self.playerPhoneField.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
     
     
-    if ([playerName length] == 0 || [playerEmail length] == 0 || self.junkballers[@"QRCode"] == nil) {
+    if ([playerName length] == 0 || [playerPhoneField length] == 0) {
         //Change to include QR code warning.
-        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Oops!" message:@"Jeesh, make sure you enter a name and an email!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Oops!" message:@"Jeesh, make sure you enter a name and a phone number Were you born in a barn?" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
         [alertView show];
         
         
@@ -59,7 +59,7 @@
     else {
         
         self.junkballers[@"name"] = playerName;
-        self.junkballers[@"email"] = playerEmail;
+        self.junkballers[@"phone"] = playerPhoneField;
         self.junkballers[@"points"]= [[NSNumber alloc] initWithInt:5];
         [self.junkballers setObject:[PFUser currentUser] forKey:@"createdBy"];
         [self.junkballers saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
