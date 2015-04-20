@@ -21,6 +21,9 @@
 @property(strong,nonatomic)NSDate* myDate;
 @property(strong,nonatomic)NSString *keyToDisplay;
 @property(strong,nonatomic)PFObject *createdAt;
+@property(strong,nonatomic)PFObject *lessonTakenDate;
+
+
 
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *lessonNumber;
 

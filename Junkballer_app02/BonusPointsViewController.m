@@ -73,6 +73,7 @@
    
     lesson[@"User"] = [PFUser currentUser];
     lesson[@"Player"] = self.junkerballer;
+    lesson[@"lessonTakenDate"] = [NSDate date];
     [lesson saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
         if (error) {
             UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Oops!" message: [error.userInfo objectForKey:@"error"] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];

@@ -72,9 +72,9 @@
     NSDate *currentDate = [NSDate date];
     self.junkerballers[@"checkInDate"] = currentDate;
     PFObject *player = object[@"Player"];
-    NSDate *myDate = player.updatedAt;
-    
-    NSLog(@"%@", myDate);
+//    NSDate *myDate = player.updatedAt;
+//    
+//    NSLog(@"%@", myDate);
     NSLog(@"%@", player);
     
     [player fetchIfNeededInBackgroundWithBlock:^(PFObject *player, NSError *error) {
