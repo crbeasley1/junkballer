@@ -18,12 +18,19 @@
 
 - (void)viewDidLoad
 {
+    self.usernameField.delegate = self;
+    self.passwordField.delegate = self;
     [super viewDidLoad];
     self.navigationItem.hidesBackButton = YES;
     [self.view endEditing:YES];
     
 }
 
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [textField resignFirstResponder];
+    return YES;
+
+}
 
 
 /*
@@ -39,7 +46,10 @@
 
 - (IBAction)login:(id)sender {
     NSString *username = [self.usernameField.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+    
     NSString *password = [self.passwordField.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+    
+    
     
     
     if ([username length] == 0 || [password length] == 0) {
@@ -63,5 +73,11 @@
                                             }
                                             }];
     }
+
 }
+
+- (IBAction)forgot:(id)sender {
+}
+
+
 @end

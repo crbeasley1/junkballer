@@ -14,7 +14,6 @@
 #import "JunkballerModel.h"
 #import <KiipSDK/KiipSDK.h>
 
-
 @interface JunkballerProfileViewController ()
 @property(strong, nonatomic)IBOutlet UILabel *nameLabel;
 @property(strong, nonatomic)IBOutlet UILabel *pointsLabel;
@@ -90,6 +89,7 @@
 
 - (IBAction)checkIn:(id)sender {
     
+    
         NSDate *currentDate = [NSDate date];
         //NSLog(@"%@", currentDate);
         //self.junkerballer[@"checkInDate"] = currentDate;
@@ -119,6 +119,18 @@
                           }
 
        }];
+       
+       [[Kiip sharedInstance] saveMoment:@"fivehundobackhands" withCompletionHandler:^(KPPoptart *poptart, NSError *error) {
+           if (error){
+               NSLog( @"something's wrong");
+           }
+           if (poptart){
+               [poptart show];
+                NSLog(@"Something happened");
+           }
+       }];
+      
+
        
 
        

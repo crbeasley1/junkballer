@@ -28,15 +28,20 @@
     
     [super viewDidLoad];
     self.model = [JunkballerModel sharedManager];
+    [self.tableView reloadData];
+    
     
     
 }
 
 -(void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    [self.tableView reloadData];
+    
+    
     
 }
+
+
 
 
 #pragma mark - Table view data source
@@ -53,6 +58,9 @@
     //#warning Incomplete method implementation.
     // Return the number of rows in the section.
     return [self.model.allPlayers count];
+    
+    
+    
 }
 
 
@@ -63,11 +71,13 @@
     static NSString *CellIdentifier = @"junkballerCell";
     NSLog(@"%@",CellIdentifier);
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"junkballerCell" forIndexPath:indexPath];
+    
     //cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
     PFObject *junkballers = [self.model.allPlayers objectAtIndex:indexPath.row];
     [cell.textLabel setText:[junkballers objectForKey:@"name"]];
     cell.detailTextLabel.text = [NSString stringWithFormat:@"%@",
                                  [junkballers objectForKey:@"points"]];
+    [cell layoutIfNeeded];
     
     
     return cell;

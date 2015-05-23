@@ -14,6 +14,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:31/255.0f green:129/255.0f blue:233/255.0f alpha:1.0f]];
+    [[UINavigationBar appearance]setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];
+    //if ([self.window respondsToSelector:@selector(setTintColor:)]) self.window.tintColor = [UIColor whiteColor];
+    
+   
+    
     
     [Parse setApplicationId:@"NwBp45qxdk5yx8oK7gVm75JKtmFfg5LPbJcqphuQ"
                   clientKey:@"8KBcYvUjtOxXcaa3RHJuE0GsOKcsZSklpe3zj2Mx"];
@@ -24,16 +30,21 @@
     kiip.delegate = self;
     [Kiip setSharedInstance:kiip];
     return YES;
+    
+    
+
 
     
-    [Appboy startWithApiKey:@"dfd4266f-e304-4a86-a555-1f745e6d5596"
-              inApplication:application
-          withLaunchOptions:launchOptions];
+//    [Appboy startWithApiKey:@"dfd4266f-e304-4a86-a555-1f745e6d5596"
+//              inApplication:application
+//          withLaunchOptions:launchOptions];
     
    
     
     
 }
+
+
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {

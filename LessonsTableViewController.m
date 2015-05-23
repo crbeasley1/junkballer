@@ -69,8 +69,8 @@
                                       reuseIdentifier:cellIdentifier];
     }
     
-    NSDate *currentDate = [NSDate date];
-    self.junkerballers[@"checkInDate"] = currentDate;
+//    NSDate *currentDate = [NSDate date];
+//    self.junkerballers[@"checkInDate"] = currentDate;
     PFObject *player = object[@"Player"];
 //    NSDate *myDate = player.updatedAt;
 //    
@@ -82,12 +82,16 @@
         
         cell.textLabel.text = player[@"name"];
         
-        NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-        [dateFormatter setDateFormat:@"MM.dd.yyyy"];
-        NSString *dateString = [dateFormatter stringFromDate:currentDate];
-        NSLog(@"%@", dateString);
-
-        cell.detailTextLabel.text = dateString;
+//        NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+//        [dateFormatter setDateFormat:@"MM.dd.yyyy"];
+//        NSString *dateString = [dateFormatter stringFromDate:[NSDate date]];
+//        NSLog(@"%@", dateString);
+//        cell.detailTextLabel.text = dateString;
+        NSDate *updated = [object updatedAt];
+        NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
+        [dateFormat setDateFormat:@"EEE, MMM d, h:mm a"];
+        cell.detailTextLabel.text = [NSString stringWithFormat:@"Lesson Taken: %@", [dateFormat stringFromDate:updated]];
+        
     }];
     
     // Configure the cell to show todo item with a priority at the bottom

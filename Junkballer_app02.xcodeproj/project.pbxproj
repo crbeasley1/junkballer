@@ -23,7 +23,6 @@
 		22C948F01940162E0026F3B1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C948D81940162D0026F3B1 /* UIKit.framework */; };
 		22C948F81940162E0026F3B1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 22C948F61940162E0026F3B1 /* InfoPlist.strings */; };
 		22C948FA1940162E0026F3B1 /* Junkballer_app02Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C948F91940162E0026F3B1 /* Junkballer_app02Tests.m */; };
-		22C94904194016810026F3B1 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22C94903194016810026F3B1 /* MainStoryboard.storyboard */; };
 		22C94925194022E80026F3B1 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C9491C194022E80026F3B1 /* AudioToolbox.framework */; };
 		22C94926194022E80026F3B1 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C9491D194022E80026F3B1 /* CFNetwork.framework */; };
 		22C94927194022E80026F3B1 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C9491E194022E80026F3B1 /* CoreLocation.framework */; };
@@ -48,15 +47,17 @@
 		F1AA274219621EA700208E6C /* JunkballerProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1AA274119621EA700208E6C /* JunkballerProfileViewController.m */; };
 		F1AA27481962232300208E6C /* JunkballerRedeemPointsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1AA27471962232300208E6C /* JunkballerRedeemPointsTableViewController.m */; };
 		F81940B01ABB17C400C8C23B /* LessonsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F81940AF1ABB17C400C8C23B /* LessonsTableViewController.m */; };
+		F86150821AE5CECA00C266F3 /* KiipSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F86150811AE5CECA00C266F3 /* KiipSDKResources.bundle */; };
+		F86150831AE5E3C100C266F3 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8B0A7811ADCC61B00949BDE /* MediaPlayer.framework */; };
+		F87A8C9F1AE7E965000DF249 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F87A8C9E1AE7E965000DF249 /* CoreText.framework */; };
 		F87B9D9F1AD0EC4E006690C1 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F87B9D9E1AD0EC4E006690C1 /* CoreTelephony.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		F87B9DA01AD2D436006690C1 /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F89256CD1AD02FE900C6790E /* libz.1.2.5.dylib */; };
 		F87F678A1ADB2349006B5259 /* jballlaunch.png in Resources */ = {isa = PBXBuildFile; fileRef = F87F67881ADB2349006B5259 /* jballlaunch.png */; };
 		F87F678B1ADB2349006B5259 /* jballlaunch_R4.png in Resources */ = {isa = PBXBuildFile; fileRef = F87F67891ADB2349006B5259 /* jballlaunch_R4.png */; };
+		F88278861AFBD28500164090 /* ResetPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FCF3D91AE9C0AE00A96F11 /* ResetPasswordViewController.m */; };
 		F8ACDEDA1AE07FAD00449FA8 /* KiipSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8B0A7791ADCC51F00949BDE /* KiipSDK.framework */; };
-		F8ACDEDC1AE07FE500449FA8 /* KiipSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F8ACDEDB1AE07FE500449FA8 /* KiipSDKResources.bundle */; };
 		F8B0A77E1ADCC5F600949BDE /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8B0A77D1ADCC5F600949BDE /* AdSupport.framework */; };
 		F8B0A7801ADCC60900949BDE /* PassKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8B0A77F1ADCC60900949BDE /* PassKit.framework */; };
-		F8B0A7821ADCC61B00949BDE /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8B0A7811ADCC61B00949BDE /* MediaPlayer.framework */; };
 		F8BA963C1AD0D9AF00B48309 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8BA963B1AD0D9AF00B48309 /* CoreImage.framework */; };
 		F8BA96521AD0DA0300B48309 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8BA96511AD0DA0300B48309 /* ImageIO.framework */; };
 		F8CC5B8B1AD0DFD700AFE27B /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = F8CC5B8A1AD0DFD700AFE27B /* Podfile */; };
@@ -81,6 +82,7 @@
 		F8E2B2891AB4FDB70064CF93 /* photo (15).JPG in Resources */ = {isa = PBXBuildFile; fileRef = F8E2B2701AB4FDB70064CF93 /* photo (15).JPG */; };
 		F8E2B28C1AB4FDB70064CF93 /* rewards.png in Resources */ = {isa = PBXBuildFile; fileRef = F8E2B2731AB4FDB70064CF93 /* rewards.png */; };
 		F8E37AF11AD8A34600B94088 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8E37AF01AD8A34600B94088 /* Parse.framework */; };
+		F8FCF3DC1AE9C4F800A96F11 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8FCF3DB1AE9C4F800A96F11 /* MainStoryboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,7 +117,6 @@
 		22C948F51940162E0026F3B1 /* Junkballer_app02Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Junkballer_app02Tests-Info.plist"; sourceTree = "<group>"; };
 		22C948F71940162E0026F3B1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		22C948F91940162E0026F3B1 /* Junkballer_app02Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Junkballer_app02Tests.m; sourceTree = "<group>"; };
-		22C94903194016810026F3B1 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
 		22C9491C194022E80026F3B1 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		22C9491D194022E80026F3B1 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		22C9491E194022E80026F3B1 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -151,6 +152,8 @@
 		F1AA27471962232300208E6C /* JunkballerRedeemPointsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JunkballerRedeemPointsTableViewController.m; sourceTree = "<group>"; };
 		F81940AE1ABB17C400C8C23B /* LessonsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LessonsTableViewController.h; path = ../LessonsTableViewController.h; sourceTree = "<group>"; };
 		F81940AF1ABB17C400C8C23B /* LessonsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LessonsTableViewController.m; path = ../LessonsTableViewController.m; sourceTree = "<group>"; };
+		F86150811AE5CECA00C266F3 /* KiipSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = KiipSDKResources.bundle; path = "../../../../../Downloads/Kiip-iOS-SDK-v2.1.1_1/KiipSDK.framework/Versions/A/Resources/KiipSDKResources.bundle"; sourceTree = "<group>"; };
+		F87A8C9E1AE7E965000DF249 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		F87B9D9C1AD0E9B3006690C1 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		F87B9D9E1AD0EC4E006690C1 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		F87F67881ADB2349006B5259 /* jballlaunch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jballlaunch.png; sourceTree = "<group>"; };
@@ -163,7 +166,6 @@
 		F89256BB1AD02D3800C6790E /* libPods-Junkballer_app02Tests.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-Junkballer_app02Tests.a"; path = "Pods/../build/Debug-iphoneos/libPods-Junkballer_app02Tests.a"; sourceTree = "<group>"; };
 		F89256BC1AD02D3800C6790E /* libPods-SDWebImage.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-SDWebImage.a"; path = "Pods/../build/Debug-iphoneos/libPods-SDWebImage.a"; sourceTree = "<group>"; };
 		F89256CD1AD02FE900C6790E /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
-		F8ACDEDB1AE07FE500449FA8 /* KiipSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = KiipSDKResources.bundle; path = "../../../../../Downloads/Kiip-iOS-SDK-v2.1.1_1/KiipSDK.framework/Versions/A/Resources/KiipSDKResources.bundle"; sourceTree = "<group>"; };
 		F8B0A7791ADCC51F00949BDE /* KiipSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KiipSDK.framework; path = "../../../../../Downloads/Kiip-iOS-SDK-v2.1.1_1/KiipSDK.framework"; sourceTree = "<group>"; };
 		F8B0A77D1ADCC5F600949BDE /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		F8B0A77F1ADCC60900949BDE /* PassKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PassKit.framework; path = System/Library/Frameworks/PassKit.framework; sourceTree = SDKROOT; };
@@ -171,7 +173,7 @@
 		F8BA96391AD0D94900B48309 /* libPods-Appboy-iOS-SDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-Appboy-iOS-SDK.a"; path = "Pods/../build/Debug-iphoneos/libPods-Appboy-iOS-SDK.a"; sourceTree = "<group>"; };
 		F8BA963B1AD0D9AF00B48309 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 		F8BA96511AD0DA0300B48309 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
-		F8CC5B8A1AD0DFD700AFE27B /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		F8CC5B8A1AD0DFD700AFE27B /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		F8E2B2541AB4F8E80064CF93 /* ClubProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClubProfileViewController.h; sourceTree = "<group>"; };
 		F8E2B2551AB4F8E80064CF93 /* ClubProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClubProfileViewController.m; sourceTree = "<group>"; };
 		F8E2B2561AB4F8E80064CF93 /* ScannerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScannerViewController.h; sourceTree = "<group>"; };
@@ -195,6 +197,9 @@
 		F8E2B2701AB4FDB70064CF93 /* photo (15).JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "photo (15).JPG"; sourceTree = "<group>"; };
 		F8E2B2731AB4FDB70064CF93 /* rewards.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rewards.png; sourceTree = "<group>"; };
 		F8E37AF01AD8A34600B94088 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		F8FCF3D81AE9C0AE00A96F11 /* ResetPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ResetPasswordViewController.h; path = ../ResetPasswordViewController.h; sourceTree = "<group>"; };
+		F8FCF3D91AE9C0AE00A96F11 /* ResetPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ResetPasswordViewController.m; path = ../ResetPasswordViewController.m; sourceTree = "<group>"; };
+		F8FCF3DB1AE9C4F800A96F11 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,8 +207,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F87A8C9F1AE7E965000DF249 /* CoreText.framework in Frameworks */,
+				F86150831AE5E3C100C266F3 /* MediaPlayer.framework in Frameworks */,
 				F8ACDEDA1AE07FAD00449FA8 /* KiipSDK.framework in Frameworks */,
-				F8B0A7821ADCC61B00949BDE /* MediaPlayer.framework in Frameworks */,
 				F8B0A7801ADCC60900949BDE /* PassKit.framework in Frameworks */,
 				F8B0A77E1ADCC5F600949BDE /* AdSupport.framework in Frameworks */,
 				F8E37AF11AD8A34600B94088 /* Parse.framework in Frameworks */,
@@ -244,11 +250,11 @@
 		22C948C81940162D0026F3B1 = {
 			isa = PBXGroup;
 			children = (
-				F8ACDEDB1AE07FE500449FA8 /* KiipSDKResources.bundle */,
+				F8FCF3DB1AE9C4F800A96F11 /* MainStoryboard.storyboard */,
+				F86150811AE5CECA00C266F3 /* KiipSDKResources.bundle */,
 				F8CC5B8A1AD0DFD700AFE27B /* Podfile */,
 				22B983CB1A3E7E4000EFBC1D /* beep.mp3 */,
 				F8E2B25A1AB4FDB70064CF93 /* images */,
-				22C94903194016810026F3B1 /* MainStoryboard.storyboard */,
 				22C948DA1940162D0026F3B1 /* Junkballer_app02 */,
 				22C948F31940162E0026F3B1 /* Junkballer_app02Tests */,
 				22C948D31940162D0026F3B1 /* Frameworks */,
@@ -269,6 +275,7 @@
 		22C948D31940162D0026F3B1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F87A8C9E1AE7E965000DF249 /* CoreText.framework */,
 				F8B0A7811ADCC61B00949BDE /* MediaPlayer.framework */,
 				F8B0A77F1ADCC60900949BDE /* PassKit.framework */,
 				F8B0A77D1ADCC5F600949BDE /* AdSupport.framework */,
@@ -311,6 +318,8 @@
 			children = (
 				22C948E31940162D0026F3B1 /* JunkballerAppDelegate.h */,
 				22C948E41940162D0026F3B1 /* JunkballerAppDelegate.m */,
+				F8FCF3D81AE9C0AE00A96F11 /* ResetPasswordViewController.h */,
+				F8FCF3D91AE9C0AE00A96F11 /* ResetPasswordViewController.m */,
 				F16630D51A1D6223000BD1CE /* JunkballerModel.h */,
 				F16630D61A1D6223000BD1CE /* JunkballerModel.m */,
 				F16630C71A1D618E000BD1CE /* AddPlayerViewController.h */,
@@ -503,14 +512,13 @@
 				F8E2B28C1AB4FDB70064CF93 /* rewards.png in Resources */,
 				F16630D11A1D618E000BD1CE /* app_home.png in Resources */,
 				F8E2B27A1AB4FDB70064CF93 /* app_launchimg.png in Resources */,
-				F8ACDEDC1AE07FE500449FA8 /* KiipSDKResources.bundle in Resources */,
+				F86150821AE5CECA00C266F3 /* KiipSDKResources.bundle in Resources */,
 				F8E2B2821AB4FDB70064CF93 /* inbox.png in Resources */,
 				F8E2B2801AB4FDB70064CF93 /* friends.png in Resources */,
 				F8E2B27B1AB4FDB70064CF93 /* app_launchR4.png in Resources */,
 				F87F678A1ADB2349006B5259 /* jballlaunch.png in Resources */,
 				22B983CC1A3E7E4000EFBC1D /* beep.mp3 in Resources */,
 				F16630D41A1D618E000BD1CE /* arrow.png in Resources */,
-				22C94904194016810026F3B1 /* MainStoryboard.storyboard in Resources */,
 				F8E2B2791AB4FDB70064CF93 /* app_home.png in Resources */,
 				F8E2B27E1AB4FDB70064CF93 /* camera@2x.png in Resources */,
 				F8E2B2861AB4FDB70064CF93 /* junkballer_dimmed.png in Resources */,
@@ -525,6 +533,7 @@
 				F16630B11A1D6147000BD1CE /* rewards copy.png in Resources */,
 				F8E2B2811AB4FDB70064CF93 /* friends@2x.png in Resources */,
 				F8E2B2891AB4FDB70064CF93 /* photo (15).JPG in Resources */,
+				F8FCF3DC1AE9C4F800A96F11 /* MainStoryboard.storyboard in Resources */,
 				F16630D21A1D618E000BD1CE /* app_launchimg.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -577,6 +586,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F88278861AFBD28500164090 /* ResetPasswordViewController.m in Sources */,
 				22A5F3561953D7F000F04984 /* ViewController.m in Sources */,
 				F1AA274219621EA700208E6C /* JunkballerProfileViewController.m in Sources */,
 				F1AA27481962232300208E6C /* JunkballerRedeemPointsTableViewController.m in Sources */,
@@ -721,6 +731,7 @@
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -744,6 +755,7 @@
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AddPlayerViewController : UIViewController
+@interface AddPlayerViewController : UIViewController <UITextFieldDelegate>
 
 
 @property (weak, nonatomic) IBOutlet UITextField *playernameField;

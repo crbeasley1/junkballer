@@ -67,13 +67,15 @@
     
     //static int count;
     //count++;
-    
+    //PFObject *game= [PFObject objectWithClassName:@"Game"];
+    //[game setObject:[PFUser currentUser] forKey:@"createdBy"];
     
     PFObject *lesson = [PFObject objectWithClassName:@"Lessons"];
+    NSDate *now = [[NSDate alloc] init];
    
-    lesson[@"User"] = [PFUser currentUser];
+    [lesson setObject:[PFUser currentUser] forKey:@"createdBy"];
     lesson[@"Player"] = self.junkerballer;
-    lesson[@"lessonTakenDate"] = [NSDate date];
+    lesson[@"lessonTakenDate"] = now;
     [lesson saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
         if (error) {
             UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Oops!" message: [error.userInfo objectForKey:@"error"] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
@@ -95,6 +97,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
     
 }
 

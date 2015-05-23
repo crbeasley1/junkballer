@@ -26,8 +26,18 @@
 - (void)viewDidLoad
 {
     self.junkballers = [PFObject objectWithClassName:@"Junkballers"];
+    self.playernameField.delegate = self;
+    self.playerPhoneField.delegate = self;
+    
     
     [super viewDidLoad];
+    
+    
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [textField resignFirstResponder];
+    return YES;
     
 }
 
@@ -41,6 +51,7 @@
 
 - (IBAction)backButton:(id)sender {
     [self performSegueWithIdentifier:@"backButton" sender:self];
+    
     
 }
 
@@ -72,16 +83,13 @@
                 NSMutableArray *allPlayers = [model.allPlayers mutableCopy];
                 [allPlayers addObject:self.junkballers];
                 model.allPlayers = allPlayers;
+                [self performSegueWithIdentifier:@"backButton" sender:self];
                 
                 
                 }
-            else {
-                
-            }
             
         }];
-        [self.view endEditing:YES];
-        [self.navigationController popToRootViewControllerAnimated:YES];
+        
         
         
         
@@ -90,11 +98,11 @@
     
     
 }
--(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
-    if([segue.identifier isEqualToString:@"ScanNewPlayer"]){
-        ViewController *qRReader = segue.destinationViewController;
-        qRReader.readerDelegate = self;
-    }
-}
+//-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+//    if([segue.identifier isEqualToString:@"ScanNewPlayer"]){
+//        ViewController *qRReader = segue.destinationViewController;
+//        qRReader.readerDelegate = self;
+//    }
+
 
 @end

@@ -18,11 +18,20 @@
 
 
 - (void)viewDidLoad
-{
+{   self.usernameField.delegate = self;
+    self.passwordField.delegate = self;
+    self.emailField.delegate = self;
     [super viewDidLoad];
-    self.navigationItem.hidesBackButton = YES;
+    self.navigationItem.hidesBackButton = NO;
     // Do any additional setup after loading the view.
 }
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [textField resignFirstResponder];
+    return YES;
+    
+}
+
 
 
 /*
